@@ -1,4 +1,4 @@
-/* geral tags in the reset.css */
+/* general tags in the reset.css */
 
 header {
     background-image: url('../img/header1.jpg');
@@ -8,6 +8,7 @@ header {
     background-size: cover;
     background-position: center;
     padding: 40px 2%;
+    min-height: 800px;
 }
 
 .wraper-nav {
@@ -16,19 +17,22 @@ header {
     align-items: center;
 }
 
-/* The teacher again using float, but I dont want use this */
+/* Again, the teacher used float, but I dont want to use it */
 
-header nav ul {
+.desktop ul {
     display: flex;
     justify-content: right;
     list-style: none;
+    
 }
 
-header nav ul li a{
+.desktop ul li a{
     text-decoration: none;
     color: white;
     font-size: 18px;
     padding-left: 40px;
+    list-style-position: outside;
+    padding-left: 15px;
 }
 
 .logo {
@@ -44,12 +48,57 @@ header nav ul li a{
     background-position: center;
 }
 
-nav ul li a:hover {
+.desktop ul li a:hover {
     color: gray;
 }
 
-nav ul li:nth-child(1) {
+.desktop ul li:nth-child(1) {
     font-weight: bold;
+}
+
+.mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu-aberto.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.mobile ul {
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    margin: 0 25%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+    transition: 2s;
+    opacity: 0;
+}
+
+nav.mobile:hover ul{
+    opacity: 1;
+}
+
+.mobile ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.mobile ul li {
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+}
+
+.mobile ul li:hover {
+    background-color: #ccc;
+    transition: 0.7s;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 .wraper-chamada1 {
@@ -78,20 +127,42 @@ nav ul li:nth-child(1) {
     margin-top: 10px; 
 }
 
-/* I'm making solo this part */
+/* This part I made by myself */
 
 @media screen and (max-width: 960px) {
     header {
         padding: 20px 2%;
+        height: auto;
+        min-height: 90vh;
     }
 
-    .wraper-nav {
+    /*.wraper-nav {
         flex-direction: column;
         align-items: center;
         text-align: center;   
-    }
+    }*/
 
     header nav ul li a {
         padding: 10px;
+    }
+
+    .wraper-chamada1 {
+        justify-content: center;
+    }
+    
+    .chamada1 {
+        text-align: center;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+    }
+    
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
     }
 }
