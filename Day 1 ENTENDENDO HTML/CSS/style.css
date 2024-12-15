@@ -1,0 +1,741 @@
+/* para treinar dia 1 */
+/* para chamar o id #
+para chamar o class .
+tomar cuidado com o javascript usando o ID. Da erro logo de cara se usado errado. */ 
+
+html, body {
+    height: 100%;
+    cursor: url(../imagens/toppng.com-lightsaber-cursor-327x412.png),auto;
+}
+
+*{ 
+    /*sempre usar essa receitinha a "*" serve para pegar todo o documento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../imagens/toppng.com-lightsaber-cursor-327x412.png),auto;
+}
+
+#div1 h1{ 
+    /* ">" apenas a div filha seria aplicada
+    caso queira atacar todas apenas coloque h1 ou o nome */
+    color: red;
+}
+
+.div2 h1 {
+    color: yellow;
+}
+
+
+
+.menu{
+    width: 900px;
+    /*background-color: gray;*/
+    margin: 0 auto; /*primeiro e cima e baixo e segundo esquerdo e direito, espaçamento externo*/
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none; /*tira decoração do link ou texto*/
+    margin: 20px; /*aumenta o espaço do lado de fora*/
+    color: black; /*cor da fonte*/
+    font: 20px; /*tamanho da fonte*/
+    background-color: gray; /*background de fundo*/
+    padding: 20px; /*margem interna dentro do elemento*/
+    border: 10px solid black; /*cria uma borda em volta do elemento, podendo escolher o lado*/
+}
+
+
+.artigo {
+    width: 80%; /*utilizamos % para designer resposivo */
+    max-width: 1280px;/*para limitar um tamanho fixo*/
+    margin: 40px auto;
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.artigo h1 { /*por padrão já tem font-weight: bold*/
+    color: #069;
+    margin: 10px;
+    font-size: 100px; /*1em (seria 100% do tamanho padrão)*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-weight: bold; negrito no caso*/
+}
+
+.artigo p {
+    text-align: left; /*posso reescrever a div mãe*/
+    letter-spacing: 20px; /*Poe espaço nas letras*/
+    line-height: 40px; /*Aumenta a altura entre as letras*/
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellowgreen;
+    margin-top: 10px;  
+    line-height: 25px; /*serve para deixar para a quebra da proxima linha com um espaço*/
+}
+
+
+.list, .list2 {
+    list-style-position: inside; /*Serve para colocar a bolinha do list style dentro ou fora da lista*/
+    list-style-type: upper-roman; /*Coloca numeros, quadrados, circulos antes do item*/
+    background: gray;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.list li,.list2 li {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: cornflowerblue;
+
+}
+
+/*.list .item3 {
+    color: red;
+}*/
+
+.list li.item3, .list2 li.item3 { /*Quanto mais especifico for mais vai ser superior a ordem de comando*/
+    color: purple;
+    font-weight: bold;
+}
+
+ol{
+    list-style-position: inside;
+    width: 80%;
+    max-width: 1280px;
+    background-color: tomato;
+    text-align: center;
+    margin: 20px auto;
+}
+
+ol > li  { /*utilizando > pode nos ajudar como também prejudicar*/
+    font-size: 30px;
+    color: springgreen;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+
+.um {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.um > .dois {
+    width: 250px;
+    height: 250px;
+    background-color: violet;
+}
+
+.um > .dois > .tres {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.um > .quatro { /*ataca apenas os que estão dentro ">"*/
+    width: 50px;
+    height: 50px;
+    background-color: slategrey;
+}
+
+
+.tipo1 {
+    background-color: cyan;
+    font-size: 30px;
+    color: royalblue;
+    margin: 20px;
+}
+
+.link_ {
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 3px 5px black;
+}
+
+
+.header {
+    margin-top: 50px;
+    background-color: green;
+    width: 100%;
+    min-width: 1280px; /*usado para por uma largura minimo no designer responsivo*/
+    height: 200px;
+}
+
+.article {
+    width: 1280px;
+    height: 500px;/*primeira*/
+    max-height: 5%;/*terceira*/
+    min-height: 10%; /*segunda*/
+    background: red;
+}
+
+
+.center {
+    box-sizing: border-box; /*usado para Não aumentar o tamanho definido e sim dentro do elemento*/
+    width: 1280px;
+    margin: 0 auto;
+    background-color: aqua;
+
+}
+
+.cubo1 {
+    vertical-align: top; /*usado para alinhar o texto verticalmente*/
+    display: inline-block; /*tem que por margin -4px*/
+    width: 600px;
+    margin: 10px 15px;
+    box-sizing: border-box;
+    border: 3px solid rgba(255, 255, 255, 5); /*da para colocar uma borda usando o border com RGBA*/
+    /*outline: 2px solid black; usado para por borda do lado DE FORA, o elemento pai não leva ele como conteudo*/
+
+    /*as tags tem display block por padrão, span tem display inline ( não pode setar largura nem altura */
+}
+
+
+.pai {
+    width: 1280px;
+    padding: 20px 0;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.child {
+    float: left; /*Fica como se tivesse vazio, substitui o border-box: inline-box; e margin: -4px;. Mas precisa usar clear: both; na div*/
+    background-color: red;
+    width: 640px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 100px;
+}
+
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    overflow: auto; /*hidden esconderia o texto, auto criaria uma scroll bar por padrão vem visible*/
+    /*overflow-x: auto; X ou Y todos ficariam automatico caso coloque algum, esse e usado para por a barra para o lado*/
+}
+
+/*auto ( automatico ), inherit ( herdar ) e intial ( inicial ou padrão )*/
+
+.box20 {
+    margin: 0 auto;
+    margin-top: 30px;
+    color: green;
+    width: 400px;
+    background-color: #069;
+}
+
+.box21 {
+    background-color: red;  /*por não ter nada setado no box21 o span como esta herdando dele não consegue pegar a altura e largura do box20*/
+}
+
+.box20 .box21 span {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background-color: bisque;
+}
+
+@media screen and (max-width:480px){ /*para criar o responsivo*/
+    .box20 {
+        height: auto;
+    }
+}
+
+
+/*a[href="http://www.google.com"] { tem que ser igual para poder achar !!!
+    background-color: yellow;
+} por conta do nivel de especificação podemos colocar o atributo direto na tag
+
+[href="http://www.google.com"] {
+    background-color: red;
+} seria aplicado se não tivesse outro nivel de especificação maior que este. */
+
+/*a[href*="google"]{ 
+    background-color: black;
+} * faz com que todos os "a" que tenha a palavra google seja pega */
+
+/*a[attr~="google"] {
+    background-color: violet;
+} attr e um atributo, "~" vai procurar dentro desse atributo entre os espaços a palavra google. Já o * qualquer semelhança exemplo GOO já aplicaria o efeito. */
+
+/*a[attr|="google"]{
+    background-color: purple;
+}Nesse caso, quando a palavra for sepada por - ele pegara a primeira palavra, diferente do href normal*/
+
+/*a[href$="google"] {
+    background-color: whitesmoke;
+} utilizado quando terminamos com a palavra */
+
+/*input[type=text] {
+     background-color: red; 
+} usamos "" quando temos um espaço nas palavras caso contrario pode escrever normal*/
+
+.oui {
+    width: 900px;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    border-collapse: collapse; /*faz com que as bordas colapse ou se junte*/
+}
+
+.oui tr td {
+    height: 30px;
+    border: 1px solid black;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+.menu333 {
+    position: sticky;
+    position: -webkit-sticky; /*fixed = precisa que a div esteja no topo do html para funcionar, caso contrario ela some. Absolute posiciona a onde for mas ele fica fixo no lugar não desce junto com a pagina, sticky ele desce com a pagina mas some ( tem que ver melhor) */
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.box111 {
+    width: 100%;
+    height: 1400px;
+    background-color: violet;
+}
+
+.box111 p {
+    font-size: 40px;
+}
+
+.test1 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 10px;
+    margin: 20px 20px;
+    font-size: 15px;
+    background-color: turquoise;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid black;
+}
+
+/*.bg { sobre background
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    margin: 0 auto;
+    background-image: url('../imagens/sun-flower-1681385_640.jpg');
+    background-size: cover; cover usado para cobrir a nossa área mãe, contain fica contido na box ( podemos usaro position para mover para os lados
+    background-position: center; podemos direcionar o background
+    background-repeat: no-repeat; no-repeat, repeat-x, repeat-y
+}*/
+
+.bg {
+    width: 100%;
+    height: 400px;
+    background-image: url('../imagens/sun-flower-1681385_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    background-size: contain;
+    background-attachment: fixed; /*faz com que a imagem fique de fundo sumindo, ou acompanhe com o scroll*/
+}
+
+.bows {
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    background-color: red;
+}
+
+.its {
+    width: 33.3%; /*para colocar 1 em cima do outro basta por 100% e tirar o margin right*/
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.bows img {
+    width: 150px;
+}
+
+.its img {
+    width: 30%;
+}
+
+.last {
+    margin-right: 0px;
+}
+
+.its p { 
+    background-color: yellow;
+    text-align: left;
+    display: inline-block;
+} /*Aqui um caso a parte, onde se colocarmos o texto para esquerda, ele vai sair da linha do icone, então para arrumar isso podemos por inline-block que fara com que ele vire inline junto com a imagem */
+
+/*pseudo class e quando vc cria uma especificação para o elemento exemplo o passar do cursor por cima*/
+
+.teste01,.teste02,.teste03 {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+
+.teste01 {
+    background-color: yellowgreen;
+}
+
+.teste02 {
+    background-color: aqua;
+}
+
+.teste02:hover { 
+    background-color: greenyellow;
+    width: 350px;
+    height: 350px;
+    border: 3px solid black;
+}/*Mouse passa por cima*/
+
+.teste01:active {
+    background-color: black;
+} /*quando o mouse pressiona sobre o elemento ativa o efeito*/
+
+.teste04:focus {
+    background-color: black;
+}
+
+.textarea01{
+    width: 300px;
+    height: 300px;
+    background-color: rebeccapurple;
+}
+
+.textarea01:focus {
+    background-color: black
+}
+
+.po {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+.po li:nth-last-of-type(2) {
+    background-color: red;
+}
+
+.po li:nth-last-of-type(3){
+    color: brown;
+} /*ataca de acordo com o tipo do elemento*/
+
+.po li:nth-child(4){
+    background-color: green;
+} /*ataca de acordo com os filhos*/
+
+.boxhs {
+    width: 100%;
+}
+
+.boxhs > div {
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.boxhs > div:last-of-type {
+    display: none;
+}
+
+.boxhs div:last-of-type(3){
+    background-color: red;
+} /*pega o ultimo elemento*/
+
+/*.boxhs p:last-of-type {
+    color: red;
+} pega a ultima do tipo*/
+
+/*.boxhs div:nth-of-type(3) p {
+    color: aqua;
+}pega um numero*/
+
+.boxhs div:not(.pls2) {
+    background-color: aqua;
+}/*ataca todos menos a que tenha a class ali dentro*/
+
+.pls3 p::after /*adiciona algo depois*/ {
+    content: ' Wesdley'; /*adiciona algo*/
+    background-color: red;
+
+}
+
+.father {
+    width: 100%;
+    padding: 90px 0px;
+    text-align: center;
+}
+
+.itemf {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 20px 0px;
+    display: inline-block; /*para deixar em linha*/
+}
+
+.father div:nth-of-type(2n+1) div.itemf {
+    background-color: red;
+}/*2n + 1 vai aplicar de numeros impar*/
+
+.father p:first-of-type {
+    color: red;
+}
+
+form {
+    width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form fieldset {
+    padding: 20px 30px;
+    border: 3px dashed #ccc;
+    text-align: center;
+}
+
+form legend {
+    text-align: left;
+    font-size: 20px;
+    color: violet;
+}
+
+.inp {
+    display: inline-block;
+    background-color: #ccc;
+    color: black;
+    padding: 10px;
+    margin: 20px 0px;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.inp:focus {
+    outline: 0;
+}
+
+form select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 80%; /* calc(80% + 23px) utilizado para quando não sabemos quanto aumentar na %*/
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+form h2 {
+    margin: 20px 0px;
+}
+
+.radio-input {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.radio2 {
+   text-align: left;
+}
+
+.radio2 span {
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.radio2 input {
+    margin: 10px 0;
+}
+
+.checkbox2 {
+    text-align: left;
+}
+
+.checkbox2 input {
+    margin: 10px 0;
+}
+
+.checkbox2 span {
+    font-size: 17px;
+    padding-left: 5px;
+
+}
+
+.soi option:nth-last-of-type(3) { /*para deixar a cor do option mudada*/
+    color: red;
+}
+
+.soi option[disabled] {
+    color: orange;
+}
+
+.inpt22 input[type='submit'] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #069;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer; /*para por um cursor(crosshair, wait e help)*/
+}
+
+.texta2 > textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    width: 80%;
+    padding: 5px;
+    resize: none;
+    border: 1px solid black;
+    height: 140px;
+}
+
+.texta2 textarea:focus {
+    outline: 0;
+}
+
+/*selecionar arquivo / como criar input fail personalizado*/
+
+.ouija {
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #069;
+}
+
+.ouija input {
+    display: none;
+}
+
+.ouija div label {
+    /*a label e um display inline, esse display não tem como direcionar dimensões para ele*/
+    display: inline-block;
+    font-size: 17px;
+    border: 1px solid black;
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
+    background-color: wheat;
+    text-align: center;
+    line-height: 40px; /* para centralizar juntamente com o height utilizamos o mesmo valor*/
+}
+
+.ouija p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.slc {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/271/271208.png');
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: #ccc;
+    appearance: none;
+    -webkit-appearance: none; /*safari e chrome */
+    -moz-appearance: none; /*mozila */
+    cursor: pointer;
+}
+
+.slc:focus {
+    outline: none; /* Remove a borda padrão ao focar */
+    box-shadow: none; /* Remove sombras que alguns navegadores aplicam */
+}
+
+.mkmk input[type=checkbox] {
+    display: none;
+}
+
+.mkmk label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 20px;
+    background-color: green;
+}
+
+.mkmk input[type=checkbox]:checked + label {
+    background-color: red;
+}
+
+.mkmk div {
+    text-align: center;
+}
+
+.testfont {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: "Minha fonte";
+    src: url(Chama a fonte dentro da pasta);
+} usado para chamar uma fonte dentro da pasta dos arquivos, po'rem menos indicado*/
+
+.oool p {
+    font-size: 20px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textr {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+} /*a tag !important sempre vai reescrever sobre qualquer especificação quando tem mais de 1 reescrevendo o nivel de hierarquia volta a constar*/
+
+
+form *{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+} /*usado para pegar todos dentro da class exemplo o form * */
+
+form {
+    background-color: red;
+}
+
+.iframe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+iframe {
+    width: 1280px;
+    height: 500px;
+    border: 0;
+}

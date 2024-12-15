@@ -1,0 +1,89 @@
+.titulo {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    margin: 0 6%;
+}
+
+.titulo h2 {
+    font-size: 70px;
+    color: rgb(62, 62, 62);
+}
+
+.titulo p {
+    width: 800px;
+    font-size: 18px;
+    padding-right: 5px;
+    display: inline-block;
+    color: rgb(62, 62, 62)
+}
+
+.greenp {
+    color: #036635 !important;
+    padding-left: 30px;
+    font-weight: 900;
+}
+
+.green2 {
+    display: flex;
+    margin: 20px 0;
+}
+
+.button-learnmore a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #036635;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.button-learnmore {
+    margin-top: 45px;
+}
+
+.juntos {
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    height: auto;
+    left: -750px;
+    top: -350px;
+    
+}
+
+.circlegreen {
+    position: absolute;
+    left: -700px;
+    top: -330px;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 1000px;
+    background-color: #036635;
+    transform: translateX(-5%);
+}
+
+.greenside {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: inline-block;
+    background-color: red;
+    width: 100%;
+}
+
+.icons img {
+    width: 60px;
+    height: auto;
+}

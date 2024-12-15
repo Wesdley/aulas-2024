@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu do meu web site</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+     <!-- <style type="text/css"> 
+        h1{
+            
+            color: orange;
+            background: green;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+    </style>--><!-- caso tenha a tag no inline ele é prioridade, no head seria 2 prioridade tomar cuidado com isso--> 
+    <body>
+
+        <a href="index2.html">INDEX 2</a>
+
+        <div class="menu333">
+            <a href="" class="test1">AAAA</a>
+            <a href="" class="test1">AAAA</a>
+            <a href="" class="test1">AAAA</a>
+            <a href="" class="test1">AAAA</a>
+        </div>
+      
+        <h4>Título do meu texto</h4> <!--Vai do h6 ate o h1 mudando o tamanho da fonte-->
+        <h3>Título do meu texto</h3>
+        <h2>Título do meu texto</h2>
+        <h1>Título do meu texto</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id nibh quis ipsum aliquet pellentesque a quis est. Sed sit amet varius velit.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id nibh quis ipsum aliquet pellentesque a quis est. Sed sit amet varius velit.</p> <!--usado para criar paragrafo por exemplo-->
+        <span>Um texto maior no web site</span>
+        <br/> <!--usado para separar uma linha por exemplo ele faz uma quebra do inline-->
+        <span>Um texto maior no web site</span> <!--mesma função do P, porém é uma tag inline (fica tudo na mesma linha.)-->
+        <img src="sun-flower-1681385_640.jpg" /> <!--usado para colocar uma imagem. "src" é usado para chamar a imagem sejá da pasta ou internet-->
+        <img src="https://s2-techtudo.glbimg.com/b5YztaIHpXYbpVYJsK0ySxOKW_w=/0x0:1344x768/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/A/h/ZskOJZQ9amSC55FcJROA/dream-studio-ai.png" />
+        <img src="imagens/sun-flower-1681385_640.jpg" width="300" height="200"/> <!--para chamar a imagem dentro da pasta tem que ir até seu diretorio. "width e height" podemos mudar o 
+        tamanho e altura seja com pixel ou %-->
+        <a href="http://www.google.com">Meu link</a><!--usado para chamar um link(tag "a" e uma inline) "href" usado para referencia do link-->
+
+
+
+
+        <div> <!--usado para dividir o web site, manter uma organização da marcações. Exemplo div do head, div do body etc...-->
+            <h2>titulo</h2>
+            <p>hoje é dia de vencer</p>
+        </div>
+        <div> <!--usado para dividir o web site, manter uma organização da marcações. Exemplo div do head, div do body etc...-->
+            <h2>titulo</h2>
+            <p>hoje é dia de vencer</p>
+        </div>
+
+        <table width="900" align="center" border="2"><!--para criar uma tabela separada por linhas - align serve para alinhar o item left (padrão) center (meio) right (esquerda) borda para por borda--> 
+            <tr> <!--seria como uma linha nova-->
+                <td>nome</td> <!--seria a coluna escrita-->
+                <td>idade</td>
+                <td>cargo</td>
+            </tr> 
+            <tr> <!--seria como uma linha nova-->
+                <td>Wesdley</td>
+                <td>24</td>
+                <td>Programador</td>
+            </tr>
+            <tr> <!--seria como uma linha nova-->
+                <td>Wesdley</td>
+                <td>24</td>
+                <td>Programador</td>
+            </tr> 
+            <tr> <!--seria como uma linha nova-->
+                <td>Wesdley</td>
+                <td>24</td>
+                <td>Programador</td>
+            </tr> 
+            <tr> <!--seria como uma linha nova-->
+                <td>Wesdley</td>
+                <td>24</td>
+                <td>Programador</td>
+            </tr> 
+        </table>
+        
+
+        <p>formulario de contato</p>
+        <form> <!--mesma coisa da tabela. porém para fazer formularios-->
+            <input type="text"> <!--precisa ter o type-->
+            <textarea></textarea> <!--área para escrever por exemplo-->
+            <input type="button" value="Enviar"> <!--também tem o submit, mas e um pouco diferente-->
+        </form>
+
+        <table align="center" border="2" width="900">
+            <thead> <!--thead serve para deixar no centro, deixnado mais estilizado a tabela ficando assim melhor, necessita de usar o "TH" no lugar do "TD" para funcionar-->
+                <tr>
+                    <th>nome</th>
+                    <th>idade</th>
+                    <th>profissão</th>
+                </tr>
+            <tbody> <!--o corpo da tabela ficando melhor de moldar-->
+                <tr>
+                    <td>Wesdley</td>
+                    <td>24</td>
+                    <td>Programador</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p>para <b>texto podemos</b> utilizar alguns <i>artefatos</i> para deixar as <u>letras com esteticas</u></p> <!--tags de texto-->
+        <a href="https://www.google.com" target="_blank"></a> <!--target blank serve para poder abrir em um outra aba-->
+        
+        <form>
+            <input type="text">
+            <input type="button" value="Enviar">
+            <button>Enviar 2</button> <!--mesma coisa que o input button-->
+            <input type="submit">
+        </form>
+        
+        <div>
+            <h1>Título</h1>
+            <h2>Título</h2>
+            <h3>Título</h3>
+            <h4>Título</h4>
+            <h5>Título</h5>
+            <h6>Título</h6>
+            <a href="">meu link</a>
+        </div>
+
+        
+        <div id="div1" class="div1">
+            <h1>Meu texto de class</h1>
+        </div>
+        <div id="div2" class="div2"> <!--id e usado no back end para chamar no css usa # cuidado id so pode ser usado 1 não podendo aplicar em todos-->
+            <h1>Meu texto de class</h1>
+        </div>
+
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Produtos</a>
+            <a href="">Contato</a>
+            <a href="">Galeria</a>
+            <a href="">Sobre</a>
+        </div>
+
+        <div class="artigo">
+            <h1>Lorem ispum</h1>
+            <p>Sed sit amet ultricies eros. Aliquam ut libero porta, accumsan massa sagittis, feugiat justo. Aliquam ac commodo orci. Curabitur pellentesque suscipit est ut ultricies. In hendrerit bibendum turpis sit amet condimentum. Ut porttitor facilisis augue, vitae suscipit justo imperdiet sit amet. Curabitur et sem rhoncus erat fringilla fringilla nec et turpis. Aliquam mattis metus in sem mattis, a sagittis nisl venenatis. Fusce commodo justo id bibendum porttitor.</p>
+            
+        </div>
+        <div class="artigo">
+            <h1>Lorem ispum</h1>
+            <p>Sed sit amet ultricies eros. Aliquam ut libero porta, accumsan massa sagittis, feugiat justo. Aliquam ac commodo orci. Curabitur pellentesque suscipit est ut ultricies. In hendrerit bibendum turpis sit amet condimentum. Ut porttitor facilisis augue, vitae suscipit justo imperdiet sit amet. Curabitur et sem rhoncus erat fringilla fringilla nec et turpis. Aliquam mattis metus in sem mattis, a sagittis nisl venenatis. Fusce commodo justo id bibendum porttitor.</p>
+            
+        </div>
+        <div class="artigo">
+            <h1>Lorem ispum</h1>
+            <p>Sed sit amet ultricies eros. Aliquam ut libero porta, accumsan massa sagittis, feugiat justo. Aliquam ac commodo orci. Curabitur pellentesque suscipit est ut ultricies. In hendrerit bibendum turpis sit amet condimentum. Ut porttitor facilisis augue, vitae suscipit justo imperdiet sit amet. Curabitur et sem rhoncus erat fringilla fringilla nec et turpis. Aliquam mattis metus in sem mattis, a sagittis nisl venenatis. Fusce commodo justo id bibendum porttitor.</p>
+            
+        </div>  
+
+
+        <ul class="list"> <!--Usado para fazer listas-->
+            <li>Produto 1</li> <!--cada LI é um item da lista-->
+            <li>Produto 2</li>
+            <li class="item3">Produto 3</li>
+            <li>Produto 4</li>
+        </ul>
+
+        <ul class="list2"> <!--Usado para fazer listas, por padrão tem bolinha-->
+            <li>Produto 1</li> <!--cada LI é um item da lista-->
+            <li>Produto 2</li>
+            <li class="item3">Produto 3</li>
+            <li>Produto 4</li>
+        </ul>
+
+
+        <ol> <!-- por padrão tem numeros na listas -->
+            <li>item
+                <ol>
+                    <li>Item dentro da lista</li>
+                    <li>Item dentro da lista</li>
+                </ol>
+            </li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+
+        <div class="um">
+            <div class="dois">
+                <div class="tres">
+
+                </div><!--tres--> 
+            </div><!--dois-->
+            <div class="quatro"></div><!--quatro-->
+        </div><!--um-->
+
+
+        <p class="tipo1">Ola sem link</p>
+        <a href="" class="link_ tipo1" target="_blank">Ola mundo</a>
+
+
+        <div class="header"></div><!--header-->
+        <div class="article"></div><!--article-->
+        
+
+        <div class="center">
+            <div class="cubo1">
+                <h1>Meu artigo</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet officiis, ducimus perspiciatis itaque odit ut doloribus quia voluptate mollitia nulla maiores est laboriosam omnis dolorem aperiam nostrum dolore quo optio!</p>
+            </div><!--cubo1-->
+            <div class="cubo1">
+                <h1>Meu artigo</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet officiis, ducimus perspiciatis itaque odit ut doloribus quia !</p>
+            </div><!--cubo1-->
+            <div class="cubo1">
+                <h1>Meu artigo</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet officiis, ducimus perspiciatis itaque odit ut doloribus quia voluptate mollitia nulla maiores est laboriosam omnis dolorem aperiam nostrum dolore quo optio!</p>
+            </div><!--cubo1-->
+        </div><!--center-->   
+
+
+        <div class="pai">
+            <div class="child">auto tune 1</div><!--child-->
+            <div class="child">auto tune 2</div><!--child-->
+            <div class="child">auto tune 3</div><!--child-->
+            <div class="child">auto tune 4</div><!--child-->
+            <div style="clear: both;"></div> <!--usado para limpar o float-->
+        </div><!--pai-->
+
+
+        <div class="box"> <!--overflow-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit quibusdam maiores autem omnis necessitatibus ullam quam ea. Vitae, quas! Dicta porro culpa doloribus sint numquam. Saepe quae fugiat nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsum esse ad consectetur aliquam quae recusandae illum consequuntur voluptatibus nemo commodi. Nobis vero, omnis non quos doloribus provident aut quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aperiam dolorum. Nobis inventore, magni cupiditate voluptate deserunt sed ullam. Veniam fugit excepturi exercitationem nostrum animi quasi veritatis blanditiis sint pariatur?</p>
+        </div><!--box-->
+
+        <div class="box20">
+            <div class="box21">
+                <p>ola mundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugit, aperiam autem illum corporis expedita ducimus magni nam rem voluptate consequuntur itaque debitis veniam vel temporibus accusamus est aliquid aliquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. In repudiandae vitae unde totam veritatis eveniet? Commodi aliquam eum amet. Dolore dignissimos totam ullam ut nulla harum illum voluptas aspernatur ipsa.</p>
+            </div>
+        </div>
+        
+        <a attr="google-danki">AAAAA google</a>
+        <a href="http://www.dankicode.com">AAA dankicode</a>
+
+        <form action="">
+            <input type="text">
+            <input type="submit" value="Enviar">
+        </form>
+        	
+
+
+        <table class="oui">
+            <tr>
+                <td>Nome</td>
+                <td>Idade</td>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Mor</td>
+                <td>21</td>
+            </tr>
+        </table>
+
+        
+        <div class="box111">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus, nihil est facere omnis doloribus cum aspernatur labore necessitatibus consequatur nesciunt! Repellendus dicta reiciendis, debitis fuga officia deleniti non nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid ipsa doloribus laborum aperiam impedit minima, autem consequuntur at labore repudiandae, eligendi velit deserunt. Amet dolores asperiores ut libero. Nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a iste atque non laboriosam perferendis magni suscipit. Quod reiciendis aspernatur est delectus perspiciatis unde dolorem, dolor neque illum dicta quaerat?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur corporis itaque corrupti molestias? Nam officia quas laboriosam quo quos ex cupiditate sed quae dolorem fugit, deleniti optio, necessitatibus assumenda! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione doloremque repellat, similique necessitatibus omnis molestiae hic ad voluptatibus ea velit possimus ipsum delectus, dolores molestias voluptatem aliquid. Perferendis, ducimus aliquid!</p>
+        </div>
+
+        <div class="bg"></div>
+
+        <div class="bows">
+            <div class="its">
+                <h2>Meu título</h2>
+                <img src="../imagens/sun-flower-1681385_640.jpg/" alt="">
+                <p>aqui meu texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deleniti suscipit magni a velit praesentium voluptate accusamus cumque libero, laborum pariatur dolorem temporibus veniam ut! Pariatur id blanditiis illo saepe?</p>
+            </div><!--its-->
+            <div class="its">
+                <h2>Meu título</h2>
+                <img src="../imagens/sun-flower-1681385_640.jpg/" alt="">
+                <p>aqui meu texto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia assumenda et officiis, autem fugit voluptate molestias eaque adipisci omnis recusandae beatae dicta id, quos nisi? Sunt quidem corrupti delectus!</p>
+            </div><!--its-->
+            <div class="its last">
+                <h2>Meu título</h2>
+                <img src="../imagens/sun-flower-1681385_640.jpg/" alt="">
+                <p>aqui meu texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga minus, nisi quibusdam sapiente repellat unde alias hic magnam at exercitationem? Iste blanditiis id voluptates velit exercitationem, iusto temporibus eaque.</p>
+            </div><!--its-->
+        </div><!--bows-->
+
+        <div class="teste01"></div>
+        <div class="teste02"></div>
+        <div class="teste03"></div>
+        <input type="text" class="teste04">
+        <textarea class="textarea01"></textarea>
+
+        <ul class="po">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+
+        <div class="boxhs">
+            <div class="pls"><p>aloooooooo</p></div>
+            <div class="pls2"><p>aloooooooo</p></div>
+            <div class="pls3"><p>aloooooooo</p></div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="father">
+            <P>ola mundo</P>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <div><div class="itemf"></div></div>
+            <p>ola mundo</p>
+        </div>
+
+
+        <form action="">
+            <fieldset>
+                <legend>Meu formulario</legend>
+                <div><input type="text" class="inp" name="name" placeholder="Digite seu nome"></div>
+                <div><input type="text" class="inp" name="e-mail" placeholder="Digite seu e-mail"></div>
+
+                <div>
+                    <select class="soi" name="lista" id="">
+                        <option disabled selected>Qual sua idade?</option>
+                        <option value="25">25+</option>
+                        <option value="30">30+</option>
+                        <option value="40">40+</option>
+                    </select>
+                </div><!--cria uma lista onde você pode colocar algo como idade-->
+                <h2>Qual sua cidade</h2>
+                
+                <div class="radio-input">
+                    <div class="radio2">
+                        <input type="radio" name="aqui se coloca o nome para selecionar apenas 1" value="florianopolis"><span>florianopolis</span>
+                    </div>
+                    <div class="radio2">
+                        <input type="radio" name="aqui se coloca o nome para selecionar apenas 1" value="São Paulo"><span>São paulo</span>
+                    </div>
+                    <div class="radio2">
+                        <input type="radio" name="aqui se coloca o nome para selecionar apenas 1" value="Rio de Janeiro"><span>Rio de janeiro</span>
+                    </div>
+                    <!--Colocado o nomes diferente ou iguais da para marcar separadamente ou juntos-->
+                </div><!--radio-input-->
+
+                <h2>Qual sua comida favorita</h2>
+                <div class="radio-input">
+                    <div class="checkbox2">
+                        <input type="checkbox" name="Comida[]" value="Sa;ada"><span>Salada</span>
+                    </div>
+                    <div class="checkbox2">
+                        <input type="checkbox" name="Comida[]" value="Macarrão"><span>Macarrão</span>
+                    </div>
+                    <div class="checkbox2">
+                        <input type="checkbox" name="Comida[]" value="Sorvete"><span>Sorvete</span>
+                    </div>
+                    <!--checkbox da para marcar todas as caixinhas ou quantas necessarias. Mesmo com o nome-->
+                </div><!--radio-input-->
+                <div class="texta2">
+                    <textarea name="observacao" placeholder="Possui alguma observação?" name="" id=""></textarea> <!--Não efetuar quebra de linha dentro do textarea pode ocasionar quebras dentro do text area-->
+                </div>
+                <div class="inpt22">
+                    <input type="submit" name="acao" value="Enviar">
+                </div>
+                
+            </fieldset>
+        </form>
+
+
+        <!--selecionar arquivo / como criar input fail personalizado-->
+        
+        <form action="" class="ouija">
+            <div>
+                <input id="file" type="file" name="file" >
+                <p>Selecione o arquivo</p><label for="file">Click aqui!</label> <!--Serve como um input tb, e por fazer referencia utilizando o "for" ele funciona como o input file-->
+            </div>   
+            <select class="slc" name="" id="">
+                <option value="">Item I</option>
+                <option value="">Item II</option>
+                <option value="">Item III</option>
+                <option value="">Item IV</option>
+            </select> <!--para remover a borda do select temos que atacar ele diretamente e não o "option"-->
+        </form>
+
+        <form action="" class="mkmk">
+            <div>
+                <input type="checkbox" name="check1" id="check1">
+                <label for="check1"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="check2" id="check2">
+                <label for="check2"></label>
+            </div>
+        </form>
+        
+        <h2 class="testfont">Ola cornos</h2> 
+
+        <div class="oool">
+            <p class="textr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium debitis veritatis quisquam veniam quo ipsam. Corporis ratione, reprehenderit dolores ipsa vero repellendus eos, porro minima ad saepe veritatis doloremque?</p>
+        </div>
+
+        <p>Ola world</p>
+        <form action="">
+            <input type="text">
+        </form> <!--input tem uma fonte pre definida -->
+        
+        <div class="iframe">
+            <iframe src="https://x.com/home" frameborder="0"></iframe>
+            <!--chama o site, porém pelo que vi alguns sites não funciona-->
+        </div>
+    </body>
+
+    <a href="index2.html">INDEX 2</a>
+    
+</html>
