@@ -1,7 +1,8 @@
 .sessao2 {
-    padding: 80px 2%;
+    padding: 80px 2% 0 2%;
     text-align: center;
-    background-color: white;
+    z-index: 2;
+    position: relative;
 }
 
 .sessao2 h2 {
@@ -20,5 +21,5 @@
 .sessao2 img {
     width: 100%;
     max-width: 1000px;
-
+    z-index: 2;
 }

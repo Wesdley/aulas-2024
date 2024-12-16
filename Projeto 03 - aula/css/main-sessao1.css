@@ -25,6 +25,7 @@
 .wraper-sessao1 {
     display: flex;
     justify-content: space-between;
+    height: calc(100% + 30px);
 }
 
 .text-sessao1 {
@@ -54,11 +55,11 @@
 .device-sessao1 {
     display: inline-block;
     position: relative;
-    top: -30;
+    top: -80px;
     width: 50%;
-    height: 430px;
+    height: calc(100% + 50px);
     background-image: url('../img/device.png');
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -72,6 +73,7 @@
 
     .wraper-sessao1 {
         display: inline-block;
+        height: auto;
     }
 
     .device-sessao1 {
