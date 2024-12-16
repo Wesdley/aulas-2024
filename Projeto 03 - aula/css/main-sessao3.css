@@ -107,3 +107,23 @@
 .tree {
     display: none;
 }
+
+@media screen and (max-width: 580px){
+    .sessao3 {
+        top: -50px;
+    }
+
+    .wraper-sessao3 {
+        display: block;
+    }
+
+    .part1 {
+        width: 100%;
+        padding: 50px 2% 50px 2%;
+    }
+
+    .part2 {
+        width: 100%;
+        padding: 50px 2% 50px 2%;
+    }
+}
