@@ -108,17 +108,41 @@
     border: 5px solid rgb(200, 200, 200);
 }
 
+/* again, my teacher used float, but I dont want use it */
+
+footer {
+    padding: 40px 0;
+    background-color: #192123;
+}
+
+.wraper-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.wraper-footer p {
+    color: white;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 580px){
     .sessao4 {
         margin-top: -50px;
     }
+    
+    .wraper-footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .wraper-footer p {
+        padding: 5px 0;
+    }
 }
 
 @media screen and (max-width: 768px){
-    .sessao4 {
-        height: 1300px;
-    }
-
     .wraper-sessao4 {
         flex-direction: column;
         align-items: center;
@@ -154,6 +178,26 @@
     .contato-form input {
         width: 100%;
     }
+
+    .wrapermap1 {
+        width: 80%;
+        position: relative;
+        margin-top: 10px;
+        margin-top: 20px;
+        padding-top: 80%;
+        display: inline-block;
+        max-width: none;
+    }
+    
+    .wrapermap2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+
 }
 
-/* time course 30:10 */
+/* time course 30:10 */     
