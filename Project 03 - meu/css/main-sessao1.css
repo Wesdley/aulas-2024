@@ -1,0 +1,20 @@
+.sessao1 {
+    background-color: rgb(71, 37, 98);
+    width: 100%;
+    height: 500px;
+}
+
+.wraper-sessao1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wraper-text {
+    text-align: left;
+    width: 50%;
+}
+
+.wraper-device {
+    width: 50%;
+    text-align: right;
+}

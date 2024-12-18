@@ -1,0 +1,4 @@
+@media (max-width: 320px) { ... } pequeno
+@media (max-width: 480px) { ... } médio
+@media (max-width: 576px) { ... } grande
+@media (max-width: 768px) { ... } tablet
