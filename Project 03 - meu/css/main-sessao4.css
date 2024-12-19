@@ -136,27 +136,12 @@
     }
 
     .map2 {
-        width: 100%;
         padding-top: 80%;
-        max-width: 480px;
         position: relative;
     }
     
     .map3 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 100%;
         padding-top: 0%;
-    }
-    
-    .map {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 5px solid #ccc;
     }
 }
