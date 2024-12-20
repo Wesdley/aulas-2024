@@ -1,0 +1,19 @@
+.mosaico-wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.mosaico-single {
+    display: flex;
+    width: 100%;
+}
+
+.mosaico-single img {
+    width: calc(100% / 6);
+    height: 100%;
+    max-height: 200px;
+    background-color: #ccc;
+    border: 5px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
