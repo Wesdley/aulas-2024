@@ -40,7 +40,7 @@ section.perfil{
 }
 
 .perfil > .container {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 @media screen and (max-width: 1080px) {
