@@ -1,0 +1,38 @@
+section.depoimentos > h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.depoimentos .container {
+    padding: 40px 0;
+    max-width: 400px;
+}
+
+.depoimento-single {
+    text-align: center;
+}
+
+.depoimento-single blockquote {
+    font-size: 15px;
+    color: #b4b4b4;
+    padding: 0 2%;
+}
+
+.nome-depoimento {
+    margin-top: 20px;
+}
+
+.nome-depoimento img {
+    width: 38px;
+    height: 38px;
+    background-size: contain;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nome-depoimento span {
+    font-size: 13px;
+    color: #b4b4b4;
+    vertical-align: 75%;
+}

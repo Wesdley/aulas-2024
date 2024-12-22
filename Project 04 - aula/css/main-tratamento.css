@@ -18,13 +18,13 @@ section.tratamentos .tratamento-container {
     color: #b4b4b4;
 }
 
-.container {
+section.tratamentos > .container {
     padding: 70px 2%;
 }
 
-.container > h2 {
+section.tratamentos .container > h2 {
     font-size: 18px;
     color: #698293;
     text-align: center;
     text-transform: uppercase;
-}
+} 
