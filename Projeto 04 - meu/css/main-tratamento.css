@@ -1,0 +1,26 @@
+.tratamento {
+    margin-top: 100px;
+}
+
+.tratamento .container > h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #698293;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.wraper-tratamento {
+    display: flex;
+}
+
+.text-tratamento {
+    width: 33.3%;
+    padding: 50px 25px;
+}
+
+.text-tratamento h2 {
+    font-size: 18px;
+    color: #737373;
+    margin-bottom: 20px;
+}

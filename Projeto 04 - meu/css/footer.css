@@ -1,0 +1,43 @@
+footer {
+    background-color: #688293;
+    padding: 40px 2%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.footer-block {
+    margin: 10px 0;
+    color: white;
+}
+
+.footer-block h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer-block p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.coda-dley {
+    background-color: #2f3a42;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    footer .container {
+        flex-direction: column;
+        justify-content: none;
+        text-align: center;
+    }
+}
