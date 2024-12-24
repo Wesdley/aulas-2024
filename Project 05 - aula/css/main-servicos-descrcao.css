@@ -1,0 +1,47 @@
+.servicos-descricao {
+    width: 100%;
+    display: flex;
+}
+
+.half1 {
+    width: 50%;
+    background-color: #242424;
+    color: white;
+    padding: 70px 2%;
+}
+
+.half1-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half1-wraper h2 {
+    font-weight: normal;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.half1-wraper ul {
+    margin-top: 20px;
+}
+
+.half1-wraper li {
+    margin-left: 35px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.half1-wraper a {
+    margin: 135px 0 0 50px;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .half1 {
+        width: 100%;
+    }
+
+}

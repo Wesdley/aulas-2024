@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+}
+
+html, body {
+    height: 100%;
+}
+/*Global Class*/
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.btn1 {
+    border-bottom: 3px solid #B21E1E;
+    border-top: 3px solid #f28a8a;
+    background-color: #EB2D2D;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+/*End Global Class*/
