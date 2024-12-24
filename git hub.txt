@@ -7,7 +7,11 @@
 	git remote add origin (http)
 	git push -u origin main ( 1 vez )
 
--= Depois de já configurar -=
+-= Depois de já configurar =-
 	git add .
 	git commit -m "Comentario"
 	git push origin main
+
+-= Para olhar e trocar diretorios =-
+	git remote -v
+	git remote set-url origin (url)
