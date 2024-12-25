@@ -24,6 +24,8 @@ html, body {
     font-style: italic;
     font-size: 18px;
     line-height: 45px;
+    width: 100%;
+    max-width: 150px;
 }
 
 /*End Global Class*/

@@ -1,0 +1,66 @@
+footer {
+    background-color: #252525;
+    padding: 40px 2%;
+}
+
+footer p {
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer li {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+.codedley {
+    padding: 20px 2%;
+    text-align: center;
+    background-color: #EB2D2D;
+}
+
+.codedley h2 {
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    footer p {
+        margin-top: 0px;
+        text-align: center;
+    }
+}
