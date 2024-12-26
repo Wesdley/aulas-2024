@@ -67,8 +67,12 @@ header > .container {
         display: none;
     }
 
-    .mobile {
-        display: none;
+    .mobile{
+        display: block;
         z-index: 999;
+    }
+
+    .mobile ul {
+        display: none;
     }
 }
