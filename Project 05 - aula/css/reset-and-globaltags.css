@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Oswald", serif;
+    font-size: 100%;
 }
 
 html, body {
     height: 100%;
 }
+
+a {
+    display: block;
+    text-decoration: none;
+}
 /*Global Class*/
+
+.hln {
+    border-bottom: 3px solid #EB2D2D
+}
 
 .container {
     max-width: 1400px;
@@ -53,5 +63,6 @@ html, body {
     position: absolute;
     top: calc(23px - 2px);
 }
+
 
 /*End Global Class*/

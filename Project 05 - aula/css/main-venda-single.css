@@ -1,0 +1,84 @@
+section.venda-single {
+    padding: 0 2%;
+}
+
+section.venda-single .container {
+    padding: 80px 0 40px 0;
+    max-width: 1300px;
+    display: flex;
+}
+
+.info-veiculo {
+    width: 60%;
+}
+
+.foto-destaque {
+    width: 100%;
+    padding-top:60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.descricao-veiculo {
+    width: 40%;
+    padding-left: 40px;
+}
+
+.descricao-veiculo h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.descricao-veiculo h3 {
+    font-size: 18px;
+}
+
+.descricao-veiculo span {
+    color: #EB2D2D;
+}
+
+.descricao-veiculo p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.descricao-veiculo a {
+    margin-top: 20px;
+}
+
+.nav-galeria {
+    width: calc(100% + 10px);
+    margin-top: 15px;
+    overflow-x: scroll;
+}
+
+.wraper-nav-galeria {
+    width: 200%;
+    display: flex;
+}
+
+.mini-img {
+    width: calc(33.3% * ( 100 / 200));
+    padding-top: calc(33.3% * ( 100 / 200) * 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section.venda-single .container {
+        flex-direction: column;
+        padding: 80 2% 0 2%;
+    }
+    
+    .info-veiculo {
+        width: 100%;
+    }
+
+    .descricao-veiculo {
+        width: 100%;
+        padding: 40px 0;
+    }
+}
