@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Document</title>
+    <link rel="shortcut icon" type="image-x/png" href="img/carro.ico">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +33,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="venda.html" style="color: red;">Venda</a></li>
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav><!--Desktop-->
@@ -40,7 +41,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="venda.html" style="color: red;">Venda</a></li>
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
@@ -52,25 +53,32 @@
             <h2>Veículo para venda</h2>
         </div><!--line-titulo-->
         <div class="container">
-            <div class="info-veiculo">
-                <div class="foto-destaque" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--foto-destaque-->
-                <div class="nav-galeria">
-                    <div class="wraper-nav-galeria">
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                        <div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img-->
-                    </div><!--wraper-nav-galeria-->
-                </div><!--nav-galeria-->
-            </div><!--info-veiculo-->
-            <div class="descricao-veiculo">
-                <h2>Lamborghine <span>Urus</span></h2>
-                <h3>2.000.000,00</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a aliquid accusantium libero earum reprehenderit magni dolorum, ullam nihil fugit doloremque? Mollitia beatae voluptate harum perferendis inventore, quo velit nulla? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, explicabo repellendus! Enim dolore vero doloribus laborum veritatis dolores earum repudiandae iusto culpa, cum modi pariatur amet perferendis. Error, consequatur harum?</p>
-                <a class="btn1" href="">Entre em contato</a>
-            </div><!--descricao-veiculo-->
+            <div class="info-bread"><a href="index.html">Home</a><span>></span><a href="venda.html">Venda</a><span>></span><span style="color: #EB2D2D;">Veículo para venda</span></div>
+            <div class="wraper-container">
+                <div class="info-veiculo">
+                    <div class="foto-destaque" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--foto-destaque-->
+                    <div class="nav-galeria-parent">
+                        <div class="arrow-left-nav"></div><!--arrow-left-nav-->
+                        <div class="arrow-right-nav"></div><!--arrow-right-nav-->
+                        <div class="nav-galeria">
+                            <div class="wraper-nav-galeria">
+                                <div style="border: 5px solid #808080;" class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png');"></div><!--mini-img--></div><!--mini-img-wraper-->
+                                <div class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img--></div><!--mini-img-wraper-->
+                                <div class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img--></div><!--mini-img-wraper-->
+                                <div class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img--></div><!--mini-img-wraper-->
+                                <div class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img--></div><!--mini-img-wraper-->
+                                <div class="mini-img-wraper"><div class="mini-img" style="background-image: url('../img/image\ copy\ 3.png')"></div><!--mini-img--></div><!--mini-img-wraper-->
+                            </div><!--wraper-nav-galeria-->
+                        </div><!--nav-galeria-->
+                    </div><!--nav-galeria-parent-->
+                </div><!--info-veiculo-->
+                <div class="descricao-veiculo">
+                    <h2>Lamborghine <span>Urus</span></h2>
+                    <h3>2.000.000,00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a aliquid accusantium libero earum reprehenderit magni dolorum, ullam nihil fugit doloremque? Mollitia beatae voluptate harum perferendis inventore, quo velit nulla? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, explicabo repellendus! Enim dolore vero doloribus laborum veritatis dolores earum repudiandae iusto culpa, cum modi pariatur amet perferendis. Error, consequatur harum?</p>
+                    <a class="btn1" href="">Entre em contato</a>
+                </div><!--descricao-veiculo-->
+            </div><!--wraper-container-->
         </div><!--container-->
     </section><!--venda-single-->
     <section class="contato">
@@ -142,7 +150,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="venda.html" style="color: red;">Venda</a></li>
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav><!--Desktop-->
