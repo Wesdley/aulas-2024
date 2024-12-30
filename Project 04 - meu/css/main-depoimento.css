@@ -1,0 +1,38 @@
+.depoimento {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.depoimento h2 {
+    font-size: 18px;
+    color: #698293;
+    margin-bottom: 50px;
+}
+
+.wraper-depoimento {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.wraper-depoimento blockquote {
+    font-size: 15px;
+    color: #b4b4b4;
+    margin-bottom: 20px;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b4b4b4;
+    font-size: 15px;
+}
+
+.img-text-dp {
+    background-image: url('../img/img_perfil.png');
+    width: 44px;
+    height: 44px;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+}

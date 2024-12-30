@@ -1,0 +1,57 @@
+section.contato {
+    padding: 40px 2%;
+}
+
+section.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.form-wraper {
+    padding: 10px 20px;
+    text-align: center;
+}
+ 
+
+.w100 {
+    width: 100%;
+}
+
+.wraper-w50 {
+    display: flex;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.form-wraper input[type=text] {
+    width: 100%;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    outline: 0;
+    line-height: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.form-wraper textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: 0;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .wraper-w50 {
+        flex-direction: column;
+    }
+    
+    .w50 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    height: calc(100px + 30px);
+}
+
+.desktop ul {
+    list-style: none;
+}
+
+.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.desktop a {
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.mobile {
+    display: none;
+    background-image: url('../img/menu-icon.png');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mobile ul {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    /* background-color: red; */
+}
+
+.mobile li {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    margin: 15px 0;
+}
+
+.mobile li:hover {
+    border-bottom: 2px solid #B21E1E;
+}
+
+.mobile a {
+    color: black;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.mobile a:hover {
+    color: #303030;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+
+    .mobile ul {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+}

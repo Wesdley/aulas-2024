@@ -1,0 +1,78 @@
+section.sobre {
+    padding: 40px 2%;
+}
+
+section.sobre .container {
+    max-width: 800px;
+}
+
+.img-oficina {
+    background-image: url('../img/oficina.png');
+    width: 100%;
+    padding-top: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+}
+
+.descricao-autor {
+    margin-top: 20px
+}
+
+.descricao-autor h2 {
+    font-size: 34px;
+}
+
+.descricao-autor p {
+    margin: 20px 0 ;
+    font-family: 18px;
+    line-height: 28px;
+}
+
+.sobre-autor {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.img-autor {
+    width: 40%;
+    padding-top: 50%;
+    background-image: url('../img/aika.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-autor{
+    width: 60%;	
+    margin: 0 20px;
+    font-family: 18px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-oficina {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .descricao-autor {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-autor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-autor {
+        width: 60%;
+        padding-top: 70%;
+        margin-bottom: 20px;
+    }
+    
+    .text-autor{
+        width: 90%;	
+    }
+}

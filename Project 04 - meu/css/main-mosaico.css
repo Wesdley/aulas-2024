@@ -1,0 +1,12 @@
+.wraper-mosaico {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wraper-mosaico img{
+    background-color: aquamarine;
+    border: 5px solid white;
+    width: calc(100% / 6);
+    height: calc(100% / 6);
+}
