@@ -71,7 +71,7 @@ window.onload = function() {
         console.log(test)
     }
     // colocamos nossos parametros
-    realizarconta(10, 20);*/
+    realizarconta(10, 20);
 
     function realizarconta (num1, num2){
         return num1+num2;
@@ -89,11 +89,17 @@ window.onload = function() {
     //podemos colocar uma função dentro de uma variavel e chamala 
 
     var obj = {'nome':'Wesdley','idade':'23'}
+    console.log(obj.nome)
     obj.func = function(){
         console.log('minha funcao')
     }
 
     obj.func();
-}
 
-1050
+    var variavel = [];
+    variavel[0] = "wesd";
+    variavel[0][2] = 'ijkij';
+    console.log(variavel[0][2]);
+
+    //tanto para obj e array da para criar um dentro do outro*/
+}
