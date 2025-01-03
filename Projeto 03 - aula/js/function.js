@@ -35,4 +35,10 @@ window.onload = function(){
     var conteudo = '<p style="color: black;font-size:18px; padding:5px 0;">Meu endereço</p>'
     addMarker(-27.648598,-48.577423,'',conteudo,true);
     //podemos adicionar outros markers
+
+    //função para colocar um tempo para efetuar uma ação
+    setTimeout(function(){
+        map.panTo({'lat':-23.550520,'lng':-46.633309})
+    },5000);
+    
 }
