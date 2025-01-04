@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer - Meu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="sound" src="audio/alarm.mp3"></audio>
+    <div class="container">
+        <div class="wraper">
+            <div class="wrapertext">
+                <h2>Minutos:</h2>
+                <select name="minutos" id="minutos"></select>
+            </div><!--wrapertext-->
+            <div class="wrapertext">
+                <h2>Segundos:</h2>
+                <select name="segundos" id="segundos"></select>
+            </div><!--wrapertext-->
+        </div><!--wraper-->
+        <button id="comecar">Comerçar!</button>
+        <div id="display" class="display">
+            <h2></h2>
+        </div><!--display-->
+    </div><!--container-->
+    <script src="js/alarme.js"></script>
+</body>
+</html>
