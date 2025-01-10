@@ -13,8 +13,16 @@
 
 .box {
     width: 500px;
-    height: 500px;
+    /* height: 500px; */
+    padding: 50px;
     background-color: #ccc;
-    margin: 0 auto;
-    margin-top: 120px;
+    margin: 0px auto;
+    border: 1px solid white;
+}
+
+.teste {
+    background-color: black;
+    height: 20px;
+    color: pink;
+    font-size: 20px;
 }
