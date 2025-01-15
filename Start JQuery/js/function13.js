@@ -10,7 +10,7 @@ $(function(){
     }
 
     $('body').click(function(){
-        alert("animação cancelada")
+        //alert("animação cancelada")
         clearTimeout(timer) // cancela a contagem do setTimeout
     })
 
