@@ -13,5 +13,5 @@
 	git push origin main
 
 -= Para olhar e trocar diretorios =-
-	git remote -v
-	git remote set-url origin (url)
+	git remote -v (verifica qual remote esta)
+	git remote set-url origin (url) (coloca a nova area para dar o push)
