@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    /* Serve para poder ajustar a imagem dentro do container */
+    width: 100%;
+    max-width: 1280px;
+    height: 80%;
+    max-height: 720px;
+    /* background-color: #ccc; */
+    margin: 20px auto;
+}
+
+.slider img {
+    display: none;
+    /* para esconder o elemento antes de carregar a pagina */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* Serve para poder ajustar a imagem dentro do container */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bulletnav {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 99;
+}
+
+.bulletnav span {
+    display: inline-block;
+    justify-content: space-between;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 0 20px;
+    cursor: pointer;
+}
