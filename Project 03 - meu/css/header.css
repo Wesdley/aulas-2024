@@ -31,6 +31,14 @@ header.container {
     font-size: 16px;
 }
 
+.desktop ul li a {
+    text-decoration: none;
+    padding: 15px;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
 .mobile {
     display: none;
     background-image: url('../img/menu-aberto.png');
@@ -41,12 +49,21 @@ header.container {
 }
 
 .mobile ul {
-    opacity: 0;
-    transition: 1.5s;
+    /* opacity: 0; */
+    /* transition: 1.5s; */
+    display: none;
 }
 
-.mobile:hover ul {
+/* .mobile:hover ul {
     opacity: 1;
+}*/ 
+
+.mobile ul li a {
+    text-decoration: none;
+    padding: 15px;
+    list-style: none;
+    color: black;
+    font-size: 16px;
 }
 
 .wrap-nav {
@@ -82,7 +99,18 @@ header.container {
     line-height: 60px;
 }
 
-
+.x{
+    position: absolute;
+    top: -20px;
+    left: 105%;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 15px;
+}
 
 @media screen and (max-width: 768px) {
     header {

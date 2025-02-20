@@ -32,7 +32,6 @@ header {
     font-size: 18px;
     padding-left: 40px;
     list-style-position: outside;
-    padding-left: 15px;
 }
 
 .logo {
@@ -74,13 +73,15 @@ header {
     top: 80px;
     list-style-type: none;
     text-align: center;
-    transition: 2s;
-    opacity: 0;
+    /* transition: 2s; */
+    /*opacity: 0; para a animação do elemento no jquery não pode ter opacidade 0*/
+    display: none;
 }
-
+/*
 nav.mobile:hover ul{
     opacity: 1;
 }
+*/
 
 .mobile ul li:nth-child(1) {
     font-weight: bold;
