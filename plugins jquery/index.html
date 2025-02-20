@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jssocials-theme-flat.css">
+    <link rel="stylesheet" href="css/jssocials.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- https://fontawesome.com/v4/get-started/ -->
+    <link rel="stylesheet" href="css/fancybox.css">
+    <!-- 
+    https://fancyapps.com/fancybox/getting-started/
+    manuel
+    https://github.com/fancyapps/ui/releases
+     -->
+     <link rel="stylesheet" href="css/style.css">
+     <!-- sempre manter o nosso por ultimo para manter quais quer atualizações que nos quisermos -->
+</head>
+<body>
+    <article>
+        <header>
+            <h2>Titulo do meu artigo</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis minima voluptas tempora laboriosam soluta quam fugit exercitationem est saepe, optio quae quas maiores nisi suscipit esse. Accusamus, nam molestias!</p>
+    </article>
+    <div class="social-share">
+
+    </div> <!-- social-share -->
+    <div class="form">
+        <input type="text">
+        <input type="email" name="email" id="">
+        <input type="telefone" name="telefone">
+        <input type="date" name="date" id="">
+        <input type="text" name="data">
+    </div>
+    <a href="img/image.png"  data-fancybox="gallery" data-caption="Caption #1"><img src="img/image.png" alt=""></a>
+    <a href="img/image.png" data-fancybox="gallery" data-caption="Caption #2"><img src="img/image.png" alt=""></a>
+    <a href="img/image.png" data-fancybox="gallery" data-caption="Caption #3"><img src="img/image.png" alt=""></a>
+
+    <script src="js/jquery371.js"></script>
+    <script src="js/jssocials.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        //propriedades aqui
+        //dessa forma já funciona perfeitamente, precisamos apenas colocar no html a imagem e depois criar uma tag img dentro do link assim funcionando o sistema de galeria de fotos
+        // posso por efeitos aqui dentro para poder mudar a forma como a imagem vai ser aberta.
+        'openEffect':'elastic',
+        arrows : false
+        });
+        </script>
+</body>
+</html>
