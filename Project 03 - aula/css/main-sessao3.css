@@ -42,8 +42,20 @@
     background-color: aquamarine;
 }
 
-.sobre-autor {
+.scroll {
     max-width: 460px;
+    overflow: hidden;
+}
+
+.scroll-wraper {
+    width: 100%;
+    display: flex;
+}
+
+.sobre-autor {
+    width: 100%;
+    max-width: 460px;
+    padding-right: 36px;
 }
 
 .titulo-autor {
@@ -100,13 +112,6 @@
 
 /*I found this animation interesting and I want make it because I don't know javascript at the moment */
 
-.two {
-    display: none;
-}
-
-.tree {
-    display: none;
-}
 
 @media screen and (max-width: 580px){
     .sessao3 {

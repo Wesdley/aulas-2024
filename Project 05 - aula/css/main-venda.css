@@ -37,7 +37,7 @@
 }
 
 .barra-preco-fill {
-    width: 30%;
+    width: 0%;
     height: 20px;
     position: absolute;
     left: -2;
@@ -55,7 +55,7 @@
     background-image: linear-gradient(to bottom, #898989, #595959);
     position: absolute;
     top: -7.5px;
-    left: calc(30% - 10px);
+    left: 0;
     border: 2px solid #494949;
     cursor: pointer;
 }
