@@ -23,6 +23,6 @@ if (nome != "Guilherme") {
     console.log("Ola Guilherme");
 }
 
-if (nome == "Wesdley" || idade == 24) {
+if (nome != "Wesdley" || idade == 24) {
     console.log("Wesdley tem 24 anos");
 }
