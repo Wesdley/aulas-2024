@@ -1,0 +1,56 @@
+section.carro-destaque {
+    padding: 40px 2%;
+}
+
+section.carro-destaque .container{
+    padding: 40px 0 0 0;
+    display: flex;
+    width: 100%;
+}
+
+.carro-wraper {
+    width: 33.3%;
+}
+
+.carro{
+    border: 5px solid white;
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.descricao-carro {
+    margin-left: 5px;
+}
+
+.descricao-carro h2 {
+    font-size: 24px;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.descricao-carro p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.descricao-carro a {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 968px) {
+    section.carro-destaque .container{
+        flex-direction: column;
+    }
+
+    .carro-wraper {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .carro{
+        width: 100%;
+        padding-top: 100%;
+    }
+}

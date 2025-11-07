@@ -1,0 +1,12 @@
+.developer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2f3a42
+}
+
+.developer h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+}

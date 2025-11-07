@@ -1,0 +1,222 @@
+/* divs gerais */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+/*******/
+
+header {
+    background-color: #D6D6D6;
+    padding: 10px 2%;
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 2%;
+    }
+
+    .logo1 {
+        background-image: url('../img/logo1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 160px;
+        height: 70px;
+    }
+
+    .logo2 {
+        background-image: url('../img/logo2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 160px;
+        height: 70px;
+    }
+}
+
+.cover-form {
+    width: 	100%;
+}
+
+.bg {
+    background-image: url('https://www.pontotel.com.br/local/wp-content/uploads/2022/05/imagem-corporativa.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.form-container {
+    background-color: rgba(150, 150, 150, 0.7);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 15px 25px, rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+.arrow-wraper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    outline: 5px solid white;
+    top: 94%;
+    left: 45%;
+}
+
+.arrow img{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container h2 {
+    font-size: 18px;
+    background-color: rgba(180, 180, 180, 0.7);
+    padding: 20px;
+}
+
+.form-container form {
+    width: 100%;
+    padding: 5%;
+}
+
+.w100 {
+    margin-bottom: 20px;
+}
+
+.w100 input {
+    width: 90%;
+    line-height: 45px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.w100 input:focus {
+    outline: 0;
+}
+
+.w100 p{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.w100 input[type=submit] {
+    margin-bottom: 40px;
+    cursor: pointer;
+    background-color: rgb(22, 80, 22);
+    border: 0;
+    color: white;
+}
+
+.w100 input[type=submit]:hover {
+    background-color: rgb(32, 95, 32);
+}
+
+section.chamada > .container {
+    background-color: gray;
+    padding: 50px 0;
+}
+
+section.chamada {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+section.chamada h2 {
+    padding: 0 2%;
+}
+
+section.chamada p {
+    font-size: 19px;
+    margin-top: 20px;
+    padding: 0 2%;
+}
+
+.flex-mosaico {
+    display: flex;
+    background-color: aqua;
+    margin: 5px 0;
+}
+
+.item-1-mosaico {
+    background-image: url('https://images.hdqwalls.com/download/anime-city-hd-zt-1280x720.jpg');
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.item-2-mosaico {
+    width: 40%;
+    padding: 60px 30px;
+    color: black;
+    font-size: 16px;
+}
+
+.flex-mosaico:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
+}
+
+footer img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 580px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    [class^="logo"] {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 960px ){
+    .bg {
+        justify-content: center;
+    }
+
+    .item-1-mosaico {
+        width: 100%;
+        padding-top: 60%;
+        object-fit: contain;
+    }
+
+    .item-2-mosaico {
+        width: 95%;
+        text-align: center;
+        padding: 20px 2%;
+    }
+
+    .flex-mosaico {
+        display: block;
+        width: 100%;
+    }
+    
+}

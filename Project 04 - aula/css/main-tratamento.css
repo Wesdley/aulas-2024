@@ -1,0 +1,30 @@
+section.tratamentos .tratamento-container {
+    display: flex;
+}
+
+.tratamento-single {
+    width: 33.3%;
+    padding: 50px 25px;
+}
+
+.tratamento-single h2 {
+    font-size: 18px;
+    color: #737373;
+    padding-bottom: 10px;
+}
+
+.tratamento-singlep {
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+section.tratamentos > .container {
+    padding: 70px 2%;
+}
+
+section.tratamentos .container > h2 {
+    font-size: 18px;
+    color: #698293;
+    text-align: center;
+    text-transform: uppercase;
+} 

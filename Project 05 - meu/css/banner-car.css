@@ -1,0 +1,97 @@
+section.banner-car {
+    background-image: url('../img/white-sport-car-with-black-autotuning-driving-with-high-speed-road.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vw;
+    max-height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+.banner-mini {
+    background-image: url('../img/box-text.png');
+    height: 70px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.banner-mini:nth-of-type(1) {
+    width: 314px;
+    margin-left: 80px;
+}
+
+.banner-mini:nth-of-type(2){
+    width: 264px;
+    margin-left: 70px;
+}
+
+.banner-mini:nth-of-type(3){
+    width: 214px;
+    margin-left: 60px;
+}
+
+.banner-mini:nth-of-type(4) {
+    background-image: url('../img/box-white-text.png');
+    width: 314px;
+    margin-left: 50px;
+}
+
+.banner-mini p {
+    font-size: 18px;
+    color: white;
+    line-height: 70px;
+    margin-left: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    section.banner-car {
+        min-height: 500px;
+    }
+
+    .banner-mini:nth-of-type(1) {
+        margin-left: 50px;
+    }
+    
+    .banner-mini:nth-of-type(2){
+        margin-left: 40px;
+    }
+    
+    .banner-mini:nth-of-type(3){
+        margin-left: 30px;
+    }
+    
+    .banner-mini:nth-of-type(4) {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .banner-mini:nth-of-type(1) {
+        margin-left: 30px;
+        width: 274px;
+    }
+    
+    .banner-mini:nth-of-type(2){
+        margin-left: 20px;
+    }
+    
+    .banner-mini:nth-of-type(3){
+        margin-left: 10px;
+        width: 254px;
+    }
+    
+    .banner-mini:nth-of-type(4) {
+        margin-left: 0px;
+        width: 274px;
+    }
+}

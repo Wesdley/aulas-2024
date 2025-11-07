@@ -1,0 +1,17 @@
+-= Configurações =-
+	git config --global user.name "Seu Nome"
+	git config --global user.email "seuemail@example.com"
+	git init
+	git add . (. significa tudo, mas da para colocar o que eu quero no lugar do . )
+	git commit -m "Primeiro commit"
+	git remote add origin (http)
+	git push -u origin main ( 1 vez )
+
+-= Depois de já configurar =-
+	git add .
+	git commit -m "Comentario"
+	git push origin main
+
+-= Para olhar e trocar diretorios =-
+	git remote -v (verifica qual remote esta)
+	git remote set-url origin (url) (coloca a nova area para dar o push)

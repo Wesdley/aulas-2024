@@ -1,0 +1,139 @@
+section.sobre-carro-venda {
+    margin: 40px 2%;
+}
+
+section.sobre-carro-venda .container {
+    display: flex;
+}
+
+.bread {
+    margin: 20px 0;
+}
+
+.bread a {
+    margin-right: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+.bread span {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.wraper-sobre{
+    width: 60%;
+}
+
+.carro-vitrine1 {
+    width: 100%;
+}
+
+.carro-vitrine-img {
+    background-image: url('../img/image\ copy\ 3.png');
+    width: 100%;
+    padding-top: 60%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.carro-mini-arrows {
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+.arrow-left {
+    background-image: url('../img/arrow-left.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-right {
+    background-image: url('../img/arrow-right.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 22px);
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carrosel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel-wraper {
+    width: 200%;
+    display: flex;
+    align-items: center;
+}
+
+.carro-carrossel-img {
+    width: calc(33.3% * (100 / 200));
+    margin: 5px;
+}
+
+.img-carrossel {
+    width: 100%;
+    padding-top: 50%;
+    background-image: url('../img/image\ copy\ 3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.text-sobre-carro {
+    width: 40%;
+    margin: 58px 20px;
+}
+
+.text-sobre-carro h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.text-sobre-carro h3 {
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.text-sobre-carro p {
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.sobre-carro-venda .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wraper-sobre {
+        width: 100%;
+    }
+
+    .text-sobre-carro {
+        width: 100%;
+        max-width: 700px;
+        margin: 10px auto;
+        text-align: center;
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,92 @@
+.contato {
+    margin: 60px 2%;
+}
+
+.contato h2 {
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.form-wraper {
+    padding: 0 2%;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    border: 1px solid ;
+    margin: 8px 0;
+    border: 1px solid #dadada;
+}
+
+.form-wraper textarea {
+    padding: 8px;
+    border: 1px solid #dadada;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    margin: 8px 0;
+}
+
+.wraper-button {
+    text-align: center;
+}
+
+.form-wraper input[type=submit] {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #688293;
+    border: 1px solid #dadada;
+    line-height: 35px;
+    font-size: 14px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.form-wraper textarea:focus {
+    outline: 0;
+}
+
+.form-wraper input[type=text]:focus {
+    outline: 0;
+}
+
+.form-wraper span {
+    font-size: 14px;
+    color: #b4b4b4;
+    text-align: left;
+}
+
+.wraper-w50 {
+    width: 100%;
+    display: flex;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .wraper-w50 {
+        flex-direction: column;
+    }
+    
+    .w50 {
+        width: 100%;
+    }
+}

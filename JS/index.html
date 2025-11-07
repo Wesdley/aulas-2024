@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*console.log("Ola mundo"); o console faz a chamada e o log o que e necessario 
+        alert("Ola mundo"); alerta dentro da pagina
+        window.onload = function() { essa função vai sempre certificar que vai funcionar depois da pagina carregar
+            alert("Ola mundo");
+        }
+       window.onload = function(){
+        var String, Number, Bool; //Criação da variavel
+        var nome = "wesdley", idade = 24; //pode ser colocado dessa forma já especificando 
+        console.log("Ola "+nome+(" você tem "+idade+" anos"))
+        //String = Nome
+        //Number = 10
+        //Bool = True or false
+        String = "Wesdley";
+        Number = 24;
+        Bool = true;
+        nome = "Wesdley" // setando o nome para a variavel, numeros podem ser adicionado sem aspas
+        console.log("Ola " + String + Number + Bool) // o + adiciona outra palavra ou chama algo, no caso chamou a variavel*/
+        window.onload = function(){
+        var nome = [];// [] é um array  para atribuir numeros depois
+        nome[0] = 'guilherme';
+        nome[22] = 'Awe';
+        nome[110] = 'gAhu';
+        nome[30] = '211';
+        console.log(nome[110]);
+
+        var animal = {}; //para objetos usamos {}
+        animal.nome = []; //para definilo, podemos tb utilizar os array dentro do objeto
+        animal.peso = '25kg';
+        animal.idade = '15 anos';
+        animal.nome[0] = 2023;
+        animal.nome[20] = 213;
+        animal.nome[30] = 223;
+        var number = 2024 - 2001
+        //animal['idade'] = 15; pode se por um objeto desta forma tb e sera lido da mesma forma
+        console.log("O nome do meu animal é: " + animal.nome + " seu peso é: " + animal.peso + " e sua idade é: " + animal.idade);
+        console.log(typeof(animal))
+        console.log(number)
+        }
+    </script>
+    <script src="js/function.js"></script>
+</body>
+</html>

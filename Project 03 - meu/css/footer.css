@@ -1,0 +1,22 @@
+footer {
+    background-color: #192123;
+    padding: 40px 2%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+}

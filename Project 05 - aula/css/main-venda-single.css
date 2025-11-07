@@ -1,0 +1,151 @@
+/*1530*/
+
+section.venda-single {
+    padding: 0 2%;
+}
+
+section.venda-single .line-titulo {
+    margin-top: 80px;
+}
+
+section.venda-single .container {
+    padding: 80px 0px 0px 0px;
+    max-width: 1300px;
+}
+
+.wraper-container {
+    display: flex;
+}
+
+.info-bread {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.info-bread a {
+    color: black;
+    margin-right: 20px;
+}
+
+.info-bread span {
+    color: black;
+    margin-right: 20px;
+}
+
+.info-veiculo {
+    width: 60%;
+}
+
+.foto-destaque {
+    width: 100%;
+    padding-top:60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo {
+    width: 40%;
+    padding-left: 40px;
+}
+
+.descricao-veiculo h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.descricao-veiculo h3 {
+    font-size: 18px;
+}
+
+.descricao-veiculo span {
+    color: #EB2D2D;
+}
+
+.descricao-veiculo p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.descricao-veiculo a {
+    margin-top: 20px;
+}
+
+.nav-galeria-parent {
+    padding: 36px;
+    width: 100%;
+    position: relative;
+}
+
+.arrow-left-nav {
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/arrow-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.arrow-right-nav {
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/arrow-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.nav-galeria {
+    width: calc(100% + 10px);
+    overflow: hidden;
+}
+
+.wraper-nav-galeria {
+    width: 200%;
+    display: flex;
+    align-items: center;
+}
+
+.mini-img-wraper {
+    width: calc(33.3% * ( 100 / 200));
+    margin-right: 5px;
+}
+
+.mini-img {
+    width: 100%;
+    padding-top: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .wraper-container {
+        flex-direction: column;
+    }
+    
+    .info-veiculo {
+        width: 100%;
+    }
+
+    .descricao-veiculo {
+        width: 90%;
+        max-width: 700px;
+        padding: 40px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .descricao-veiculo a {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

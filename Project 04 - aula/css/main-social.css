@@ -1,0 +1,77 @@
+.instagram-chamada {
+    width: 100%;
+    text-align: center;
+    background-color: #98a5ae;
+    padding: 40px 0;
+}
+
+.instagram-chamada img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    filter: invert(1);
+}
+
+.instagram-chamada p {
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.mosaico-single-social {
+    display: flex;
+}
+
+.mosaico-single-social img{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 5px solid white;
+}
+
+.facebook-chamada {
+    width: 100%;
+    text-align: center;
+    background-color: #576975;
+    padding: 40px 0;
+}
+
+.facebook-chamada img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    filter: invert(1);
+}
+
+.facebook-chamada p {
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .mosaico-single-social img{
+        width: calc(100% / 6);
+        height: calc(100% / 6);
+        border: 5px solid white;
+    }
+
+    .mosaico-single-social img:nth-last-of-type(1n+7) {
+        display: none;
+
+        /* 1n+7 significa que depois da 6 tudo firaca em display none. Caso coloque 2n a partir da 2 vai pular de 2 em 2 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mosaico-single-social img{
+        width: calc(100% / 3);
+        height: calc(100% / 3);
+        border: 5px solid white;
+    }
+
+    .mosaico-single-social img:nth-last-of-type(1n+4) {
+        display: none;
+
+        /* 1n+7 significa que depois da 6 tudo firaca em display none. Caso coloque 2n a partir da 2 vai pular de 2 em 2 */
+    }
+}

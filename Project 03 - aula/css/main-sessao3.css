@@ -1,0 +1,134 @@
+.sessao3 {
+    width: 100%;
+    position: relative;
+    top: -200px;
+    z-index: 1;
+}
+
+/*Again, my teacher used float, but I dont want use it. Im creating a DIV wraper to use display flex*/
+
+.wraper-sessao3 {
+    display: flex;
+}
+
+.part1 {
+    width: 50%;
+    padding: 250px 2% 70px 2%;
+    background-color: #835FA7;
+    color: white;
+    display: flex;
+    justify-content: right;
+}
+
+.wraper-part1 {
+    max-width: 460px;
+}
+
+.part1 h2 {
+    font-size: 23px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.part1 p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 35px;
+}
+
+.part2 {
+    width: 50%;
+    padding: 250px 2% 70px 2%;
+    background-color: aquamarine;
+}
+
+.scroll {
+    max-width: 460px;
+    overflow: hidden;
+}
+
+.scroll-wraper {
+    width: 100%;
+    display: flex;
+}
+
+.sobre-autor {
+    width: 100%;
+    max-width: 460px;
+    padding-right: 36px;
+}
+
+.titulo-autor {
+    display: flex;
+    align-items: center;
+}
+
+.wraper-titulo-autor h2 {
+    font-size: 23px;
+    font-weight: 400;
+    font-style: italic;
+    color: #232323;
+}
+
+.wraper-titulo-autor p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.img-autor img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.text-autor p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 35px;
+    color: #232323;
+}
+
+.slide-bullets {
+    margin-top: 10px;
+}
+
+.slide-bullets span {
+    display: inline-block;
+    background-color: rgb(200, 200, 200);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide-bullets span:nth-child(1) {
+    background-color: rgb(150, 150, 150);
+}
+
+/*I found this animation interesting and I want make it because I don't know javascript at the moment */
+
+
+@media screen and (max-width: 580px){
+    .sessao3 {
+        top: -50px;
+    }
+
+    .wraper-sessao3 {
+        display: block;
+    }
+
+    .part1 {
+        width: 100%;
+        padding: 50px 2% 50px 2%;
+    }
+
+    .part2 {
+        width: 100%;
+        padding: 50px 2% 50px 2%;
+    }
+}

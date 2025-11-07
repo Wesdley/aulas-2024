@@ -1,0 +1,46 @@
+.nave-bar {
+    width: 30px;
+    max-width: 250px;
+}
+
+.bar {
+    position: absolute;
+    top: 7%;
+}
+
+.section-home {
+    width: 250px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-home a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 5px 20px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.section-home p {
+    margin: 5px 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-home a > img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    object-fit: contain;
+    border-radius: 30px;
+    background-color: gray;
+}
+
+.section-home a:hover {
+    background-color: rgb(72, 72, 72);
+    border-radius: 10px;
+}

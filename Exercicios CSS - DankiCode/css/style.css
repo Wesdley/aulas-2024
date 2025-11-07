@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    min-height: 2000px;
+}
+
+body {
+    color: red;
+}
+/*Header*/
+header {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: beige;
+    z-index: 700;
+}
+
+header button {
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+/*box de inherit*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    margin: 100 auto;
+}
+
+.box p {
+    color: inherit;
+}
+
+.box:nth-of-type(3) p {
+    color: initial;
+}
+/*form 1*/
+.form [required] {
+    background-color: yellow;
+}
+
+.form button {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(120,120,120,0.3);
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.form [data-type="primary"] {
+    border: 2px solid blue;
+}
+
+.text {
+    position: sticky;
+    top: 100px;
+    width: 220px;
+    height: 160px;
+    z-index: 1000;
+}
+
+/*back ground*/
+.four {
+    background-image: 
+        linear-gradient(to top, rgba(11, 214, 245, 0.5), rgba(10,80,90,0.0)), 
+        url('../img/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+}
+/*background and text*/
+.text5 {
+    background-color: #ccc;
+    margin-top: 10px;
+    padding: 0 10%;
+}
+
+.text5 {
+    font-size: 18px;
+    text-align: justify;
+    text-align: center;
+}
+
+/*pseudo classes */
+
+.ul6 li:hover {
+    background-color: #bbb;
+}
+
+.ul6 li:first-child {
+    color: yellowgreen;
+}
+
+.ul6 li:last-child {
+    border: 2px solid black;
+}
+
+.ul6 li:nth-child(odd) {
+    background-color: violet;
+}
+
+/*form7*/
+
+.form7 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #777777;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form7 input[type=text]{
+    height: 40px;
+    width: 90%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+.form7 textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+    height: 120px;
+    resize: none;
+    padding: 8px;
+}
+
+.form7 select {
+    height: 40px;
+    width: 120px;
+}
+
+.form7 input[type=submit] {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.form7 input[type=submit]:hover {
+    background-color: #aaa;
+}
+
+.form7 input[type=text]:focus,textarea:focus{
+    outline: 2px solid blue;
+}
+
+/*form8*/
+
+.form8 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wraper-form8 {
+    display: flex;
+}
+
+.wraper-form8 input[type=checkbox] {
+    display: none;
+}
+
+.wraper-form8 input[type=radio] {
+    display: none;
+}
+
+.wraper-form8 span{
+    margin-left: 10px;
+}
+
+.boxl {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+}
+
+.pointer {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: none;
+}
+
+.circler {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.wraper-form8 input[type=checkbox]:checked + label > .pointer {
+    display: block;
+}
+
+.wraper-form8 input[type=radio]:checked + label > .pointer {
+    display: block;
+}
+
+.wraper-form8 input[type=radio]:checked + .circler{
+    border: 2px solid #106090;
+    background-color: yellow;
+}
+
+/*text9*/
+
+.text9 h1 {
+    font-family: "Oswald", serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.text9 p {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.wraper10 {
+    text-align: center;
+}
+
+.img10 {
+    background-image: url('../img/image.png');
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 auto;
+    transition: 2s;
+}
+
+/*tags e atributos personalizados*/
+
+.img10:hover {
+    opacity: 0.7;
+}
+
+[data-action=comprar] {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    margin-top: 100px;
+    border: 2px solid black;
+    background-color: #777777;
+    cursor: pointer;
+}
+

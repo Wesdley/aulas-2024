@@ -1,0 +1,169 @@
+/* general tags in the reset.css */
+
+header {
+    background-image: url('../img/header1.jpg');
+    height: 90vh;
+    /*max-height: 800px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2%;
+    min-height: 800px;
+}
+
+.wraper-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Again, the teacher used float, but I dont want to use it */
+
+.desktop ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 40px;
+    list-style-position: outside;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    width: 220px;
+    height: 80px;
+    /* background-color: rgba(150, 150, 150, 0.7); */
+    background-image: url('../img/logotest.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.desktop ul li a:hover {
+    color: gray;
+}
+
+.desktop ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu-aberto.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.mobile ul {
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    margin: 0 25%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+    /* transition: 2s; */
+    /*opacity: 0; para a animação do elemento no jquery não pode ter opacidade 0*/
+    display: none;
+}
+/*
+nav.mobile:hover ul{
+    opacity: 1;
+}
+*/
+
+.mobile ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.mobile ul li {
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+}
+
+.mobile ul li:hover {
+    background-color: #ccc;
+    transition: 0.7s;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.wraper-chamada1 {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* background-color: red; */
+}
+
+.chamada1 {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 150px 3%;
+}
+
+.chamada1 h2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.chamada1 p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px; 
+}
+
+/* This part I made by myself */
+
+@media screen and (max-width: 960px) {
+    header {
+        padding: 20px 2%;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    /*.wraper-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;   
+    }*/
+
+    header nav ul li a {
+        padding: 10px;
+    }
+
+    .wraper-chamada1 {
+        justify-content: center;
+    }
+    
+    .chamada1 {
+        text-align: center;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+    }
+    
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+}

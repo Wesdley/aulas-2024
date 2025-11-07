@@ -1,0 +1,77 @@
+/* Again, my teacher used flot, but I dont want use it */
+
+.w-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.w-header nav.menu-desktop ul {
+    display: flex;
+}
+
+.w-header nav.menu-desktop ul li {
+    list-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+nav.menu-mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu-burger.png');
+    background-size: 100% 100%;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav.menu-mobile ul li {
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+nav.menu-mobile ul li:hover {
+    margin: 0 10%;
+    width: 80%;
+    border-bottom: 2px solid black;
+}
+
+.w-header li a:hover {
+    color: black;
+}
+
+.w-header li:hover {
+    background-color: #ccc;
+}
+
+.w-header li a  {
+    text-decoration: none;
+    color: #B4B4B4;
+}
+
+@media screen and (max-width: 768px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+    nav.menu-mobile ul{
+        list-style-type: none;
+    }
+}

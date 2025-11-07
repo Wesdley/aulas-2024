@@ -1,0 +1,22 @@
+.videos {
+    margin: 50px 0;
+}
+
+.videos > .container {
+    display: flex;
+}
+
+.box-video {
+    position: relative;
+    width: 33.3%;
+    padding-top: calc(33% * 0.6);
+    border: 5px solid white;
+}
+
+.box-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

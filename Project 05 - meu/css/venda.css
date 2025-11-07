@@ -1,0 +1,146 @@
+section.venda {
+    padding: 40px 2% 10px 2%;
+}
+
+section.venda .container {
+    display: flex;
+    margin-top: 40px;
+}
+
+section.venda aside {
+    width: 30%;
+}
+
+section.venda aside h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.barra {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid #121212;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.color-barra {
+    background-image: linear-gradient(to right, #808080, #ccc);
+    width: 30%;
+    height: 16px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.barra-ball {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-image: linear-gradient(to top, #303030, #808080);
+    position: absolute;
+    top: -8px;
+    left: 30%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.filtro2 {
+    margin-top: 20px;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.form-label input[type=checkbox] {
+    display: none;
+}
+
+.form-label label {
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+
+.circle-label {
+    display: none;
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transform: translateY(-50%), translateX(-50%);
+    -ms-transform: translateY(-50%), translateX(-50%);
+}
+
+.form-label input[type=checkbox]:checked + label > .circle-label {
+    display: block;
+}
+
+.form-label span {
+    font-size: 18px;
+}
+
+.carro-venda {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 2%;
+}
+
+.carro-venda > .carro-wraper {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    section.venda .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.venda aside {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .filtro2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carro-venda {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carro-venda {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+}

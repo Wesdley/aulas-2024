@@ -1,0 +1,173 @@
+.wraper-form {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.background {
+    background-color: #dfe3ee;
+    padding: 2%;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container > p:nth-of-type(1) {
+    font-size: 13px;
+}
+
+.form-container > p:nth-of-type(2) {
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.form-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-img h3 {
+    font-size: 19px;
+    text-align: justify;
+}
+
+.form-img img{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.form-new h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.form-new p {
+    margin-bottom: 15px;
+}
+
+.form-container input {
+    width: 300px;
+    height: 35px;
+    margin: 5px 0px;
+    padding: 5px;
+    outline: 0;
+}
+
+.form-container input[type='submit'] {
+    background-color: #30862d;
+    width: 200px;
+    margin: 5px 0px;
+    padding: 5px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    outline: 0;
+    border: 2px solid #276d25;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dividir input[type='text'] {
+    width: calc(150px - 2px);
+}
+
+.dividir {
+    width: 100%;
+    display: inline-block;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.capsula-data {
+    width: 35%;
+}
+
+.capsula-link {
+    width: 50%;
+    margin-right: -4px;
+}
+
+.data input[type='date'] {
+    width: 150px; 
+}
+
+.data a {
+    margin: 5px 0px;
+    text-align: right;
+    text-decoration: none;
+    color: #8b9dc3;
+    font-size: 13px;
+}
+
+.checkbox {
+    display: flex;
+    margin: 5px 0;
+}
+
+.checkbox p {
+    margin-top: 5px ;
+}
+
+.checkbox input[type='radio'] {
+    width: 15px;
+    margin: 0px 15px;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .wraper-form {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    .form-img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .background > .center {
+        text-align: center;
+    }
+
+    .form-new {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .form-container > p:nth-of-type(1) {
+        font-size: 13px;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .data-container {
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .capsula-data {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .capsula-link {
+        display: none;
+        width: 0%;
+    }
+    
+    .checkbox {
+        margin-left: 80px;
+    }
+
+}

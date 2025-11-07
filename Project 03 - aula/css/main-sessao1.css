@@ -1,0 +1,105 @@
+.sessao1 {
+    width: 100%;
+    background-color: #472562;
+    padding: 0px 2%;
+    height: 400px;
+}
+
+.sessao1 .container {
+    max-width: 1000px;
+}
+
+/* Again, my teacher used float, but I dont want use it*/
+.text-sessao1 {
+    margin-top: 60px;
+    padding-left: 80px;
+    position: relative;
+    left: 60px;
+}
+
+.text-sessao1 ul li {
+    list-style-position: inside;
+    padding: 8px;
+}
+
+.wraper-sessao1 {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% + 30px);
+}
+
+.text-sessao1 {
+    text-align: left;
+    color: white;
+}
+
+.text-sessao1 p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn1-text {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.device-sessao1 {
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    width: 50%;
+    height: calc(100% + 50px);
+    background-image: url('../img/device.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .sessao1 {
+        text-align: center;
+        padding: 70px 2%;
+        height: auto;
+    }
+
+    .wraper-sessao1 {
+        display: inline-block;
+        height: auto;
+    }
+
+    .device-sessao1 {
+        display: none;
+    }
+
+    .text-sessao1 {
+        margin-top: 0px;
+        padding-left: 0px;
+        display: inline-block;
+        position: static;
+        text-align: center;
+    }
+    
+    .text-sessao1 ul {
+        display: inline-block;
+    }
+
+    .text-sessao1 ul li {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .btn1-text {
+        margin: 20px auto;
+    }
+
+    /* this part I making alone because I used display flex and my teacher use float */
+}

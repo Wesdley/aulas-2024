@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button>HERE!</button>
+    </header>
+    <div class="container">
+        <!--1. Iniciando com auto, inherit e initial
+            Exercício: Explorando valores CSS padrão e herança
+            1. Crie um arquivo HTML básico com três caixas (divs) dentro do corpo.
+            2. Aplique os seguintes estilos diretamente no arquivo CSS:
+            ○ Usemargin: auto para centralizar a caixa do meio na página.
+            ○ Aplique a cor do texto da caixa central como inherit para herdá-la do body.
+            ○ Redefina a cor de texto da última caixa para o valor padrão do navegador
+            usando initial.-->
+        <div class="box">
+            <p>Text</p>
+        </div><!--box-->
+        <div class="box">
+            <p>Text</p>
+        </div><!--box-->
+        <div class="box">
+            <p>Text</p>
+        </div><!--box-->
+        <!--END 1-->
+        <!-- 2. Manipulando elementos via atributos
+            Exercício: Estilizando elementos com atributos
+            1. Crie um formulário simples em HTML com os seguintes elementos:
+            ○ Umcampodetexto com oatributo required.
+            ○ Umbotãocomoatributo disabled.
+            ○ Umcampodeseleção (<select>) com o atributo data-type="primary".
+            2. NoCSS, aplique os seguintes estilos:
+            ○ Altere a cor de fundo do campo required para amarelo.
+            ○ Torne obotão disabled mais opaco.
+            ○ Aplique uma borda azul ao campo que contém o atributo data-type="primary".-->
+        <form class="form">
+            <textarea required></textarea>
+            <select data-type="primary">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <button disabled>Enviar</button>
+        </form><!--form-->
+        <!--END 2-->
+    </div><!--container-->
+    <!--3. Criando e utilizando position
+            Exercício: Posicionando elementos na página
+            1. Crie uma página HTML com um cabeçalho (<header>) e um botão (<button>).
+            2. NoCSS, aplique os seguintes estilos:
+            ○ Configure o cabeçalho como position: fixed para que ele permaneça visível
+            ao rolar a página.
+             Posicione o botão no canto inferior direito da janela usando position: absolute.
+            ○ Adicione um conteúdo na página e aplique position: sticky a um elemento
+            para que ele fixe ao atingir o topo da tela.-->
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat optio rerum beatae repellat fuga quam tempora deserunt, quibusdam assumenda doloribus laboriosam dolores ullam minima in dicta qui nihil, obcaecati odit.</p>
+
+            <!--END 3-->
+    <div class="container">
+        <!--4. Trabalhando com backgrounds
+            Exercício: Criando uma seção com fundo estilizado
+            1. Crie uma seção (<section>) em sua página HTML.
+            2. NoCSS, aplique os seguintes estilos:
+            ○ Adicione uma imagem de fundo e configure-a para background-size: cover e
+            background-position: center.
+            ○ Adicione um gradiente linear por cima da imagem usando background (ex.:
+            de azul para transparente).
+            ○ Configure o background-attachment como fixed para criar um efeito de
+            parallax.-->
+            <section class="four"></section><!--four-->
+        <!--END 4-->
+        <!--5. Explorando backgrounds e text-align
+            Exercício: Centralizando e justificando textos
+            1. Crie dois blocos de texto (<div>), cada um contendo um parágrafo.
+            2. NoCSS, aplique os seguintes estilos:
+            ○ Adicione um fundo cinza-claro a ambos os blocos usando background-color.
+            ○ Aplique text-align: justify ao primeiro bloco.
+            ○ Aplique text-align: center ao segundo bloco.-->
+            <div class="text5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis.</p>
+            </div><!--text5-->
+            <div class="text5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas dolorum optio ullam id neque porro omnis voluptatum debitis, accusantium praesentium, repellat fugiat, odio fugit similique in laudantium asperiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat quod, tenetur eveniet eos iusto nesciunt omnis ea repellendus sapiente esse quidem, distinctio aspernatur quisquam labore hic id cum perferendis.</p>
+            </div><!--text5-->
+        <!--END 5-->
+        <!--6. Pseudo-classes
+            Exercício: Estilizando estados dos elementos
+            1. Crie uma lista não ordenada (<ul>) com cinco itens.
+            2. Aplique os seguintes estilos usando pseudo-classes:
+            ○ Altere a cor de fundo do item quando o mouse passar sobre ele (:hover).
+            ○ Destaque o primeiro item com uma cor de texto diferente (:first-child).
+            ○ Aplique uma borda apenas ao último item da lista (:last-child).
+            ○ Use:nth-child(odd) para aplicar uma cor de fundo alternada aos itens da lista.-->
+            <ul class="ul6">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul><!--ul6-->
+        <!--END 6-->
+        <!--7. Criando formulário de contato profissional
+            Exercício: Criando um formulário completo e estilizado
+            1. Crie um formulário em HTML com os seguintes campos:
+            ○ Nome(campodetexto).
+            ○ Email (campo de email).
+            ○ Assunto (campo de seleção com 3 opções).
+            ○ Mensagem(área de texto).
+            ○ Um botão de envio.
+            2. Aplique os seguintes estilos:
+            ○ Adicione um fundo branco com bordas arredondadas ao formulário.
+            ○ Altere a cor do botão ao passar o mouse sobre ele (:hover).
+            ○ Realce ocampo atualmente em foco com uma borda azul (:focus)-->
+            <form action="" class="form7">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <select>
+                    <option value="1">Opinião</option>
+                    <option value="2">Reclamação</option>
+                    <option value="3">Duvidas</option>
+                </select>
+                <textarea></textarea>
+                <input type="submit" value="Enviar">
+            </form><!--form7-->  
+        <!--END 7-->  
+        <!--8. Personalizando elementos de formulários
+            Exercício: Tornando os formulários mais atraentes
+            1. Crie um formulário simples com:
+            ○ Uma caixadeseleção (<input type="checkbox">).
+            ○ Um botão de rádio (<input type="radio">).
+            ○ Um campo de arquivo (<input type="file">).
+            2. NoCSS, aplique as personalizações abaixo:
+            ○ Substitua as caixas de seleção por ícones ou imagens personalizadas.
+            ○ Altere o estilo do botão de rádio para ter uma borda maior e uma cor interna
+            ao ser selecionado.
+            ○ Personalize o botão de upload de arquivo para parecer com um botão
+            padrão.-->
+                <form class=".form8">
+                    <div class="wraper-form8">
+                        <input type="checkbox" name="joao" id="joao">
+                        <label for="joao" class="boxl">
+                            <div class="pointer"></div>
+                        </label>
+                        <span>João</span>
+                    </div><!--wraper-form8-->
+                    <div class="wraper-form8">
+                        <input type="radio" name="kaio" id="kaio">
+                        <label for="kaio" class="circler">
+                            <div class="pointer"></div>
+                        </label>
+                        <span>Kaio</span>
+                    </div><!--wraper-form8-->
+                    <input type="file" name="enviar" id="">
+                </form>
+        <!--END 8-->
+        <!--9. Fontes personalizadas e conceitos avançados
+            Exercício: Trabalhando com fontes externas
+            1. Adicione o link para o Google Fonts no HTML e escolha duas fontes diferentes.
+            2. Aplique as fontes da seguinte forma:
+            ○ Use uma das fontes no cabeçalho (<h1>).
+            ○ Use a outra fonte no corpo do texto (<p>).
+            3. NoCSS, configure:
+            ○ O peso da fonte (ex.: font-weight: 300, 400, 700).
+            ○ Um espaçamento entre as letras (letter-spacing).
+            ○ Um espaçamento entre as linhas (line-height).-->
+            <div class="text9">
+                <h1>Lorem ipsum dolo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio, dolorem similique rem cum veritatis, autem provident mollitia nulla minus voluptatem maiores, aperiam tempore voluptatibus velit aliquid exercitationem perspiciatis. Odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore praesentium assumenda nobis voluptatem eveniet cupiditate, excepturi earum aspernatur. Nulla unde repellat delectus repellendus, architecto obcaecati accusantium sapiente fugiat maxime possimus.</p>
+            </div>
+        <!--END 9-->
+        <!--10. Tags e atributos personalizados
+            Exercício: Criando e manipulando atributos personalizados
+            1. Adicione elementos HTML com atributos personalizados:
+            ○ Crie um botão com data-action="comprar".
+            ○ Crie uma imagem com data-descricao="Produto X".
+            2. No CSS, estilize os elementos com base nesses atributos:
+            ○ Realce o botão com data-action="comprar" com uma borda e fundo
+            diferentes.
+            ○ Altere a opacidade da imagem ao passar o mouse sobre ela.-->
+            <div class="wraper10">
+                <div class="img10" data-descricao="Produto X"></div>
+                <button data-action="comprar">Comprar</button>
+            </div><!--wraper10-->
+        <!--END 10-->
+        <!-- 11. Comentários no HTML e CSS (BÔNUS)
+            Exercício: Usando comentários para organização
+            1. Crie um arquivo HTML e comente as seções do código, incluindo:
+            ○ Cabeçalho (Cabeçalho da página).
+            ○ Corpodotexto (Conteúdo principal).
+            ○ Rodapé(Rodapé da página).
+            2. Noarquivo CSS, comente cada grupo de regras, por exemplo:
+            ○ /*Estilo do cabeçalho */.
+            ○ /*Estilo do corpo */.-->
+        <!--END 11-->
+    </div><!--container-->
+</body>
+</html>

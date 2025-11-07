@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook aula</title>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h1>Facebook</h1>
+            </div><!--logo-->
+            <form action="login" class="form-login">
+                <div class="form-element">
+                    <p>E-mail ou telefone:</p>
+                    <input type="email" name="email" id="email">
+                </div><!--form-element-->
+                <div class="form-element">
+                    <p>Senha:</p>
+                    <input type="password" name="password" id="password">
+                </div><!--form-element-->
+                <div class="form-element">
+                    <input type="submit" name="acao" value="Enviar">
+                </div><!--form-element-->
+            </form><!--form-login-->
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </header>
+    <main>
+        <div class="center">
+            <div class="img-pessoas">
+                <img src="https://digitizor.com/wp-content/uploads/2009/09/facebook-what-is.png" alt="">
+            </div><!---->
+            <div class="abrir-conta">
+                <h2>Abra uma conta</h2>
+                <h3>É gratuito e sempre será!</h3>
+                <form action="" class="criar-conta">
+                    <div class="w50">
+                        <input type="text" placeholder="Nome">
+                    </div><!--w50-->
+                    <div class="w50">
+                        <input type="text" placeholder="Sobrenome">
+                    </div><!--w50-->
+                    <div class="w100">
+                        <input type="email" placeholder="Email ou telefone">
+                    </div><!--w100-->
+                    <div class="w100">
+                        <input type="password" placeholder="Senha">
+                    </div><!--w100-->
+                    <div class="w100">
+                        <h2>Data de nascimento:</h2>
+                        <select name="nascimento" id="nascimento" class="nascimento">
+                            <?php 
+                                for($i = 1; $i <=31; $i++){
+                            ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php } ?>
+                        </select><!--nascimento-->
+                        <select name="nascimento-mes" id="nascimento" class="nascimento">
+                            <option value="0">Jun</option>
+                        </select><!--nascimento-->
+                        <select name="nascimento-ano" id="nascimento" class="nascimento">
+                            <?php 
+                                for($i = 1960; $i <= 2090; $i++){
+                            ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php } ?>
+                        </select><!--nascimento-->
+                    </div><!--w100-->
+                    <div class="w100">
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" id="sexo">
+                            <h2>Masculino</h2>
+                        </div><!--input-radio-->
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" id="sexo">
+                            <h2>Feminino</h2>
+                        </div><!--input-radio-->
+                    </div><!--w100-->
+                    <div class="w100">
+                        <input type="submit" value="Cadastre-se">
+                    </div><!--w100-->
+                </form><!--criar-conta-->
+            </div><!--abrir-conta-->
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </main>
+
+    <section class="linguas">
+        <div class="center">
+            <a class="selected-lingua" href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+            <a href="#">english</a>
+        </div><!--center-->
+    </section><!--linguas-->
+</body>
+</html>

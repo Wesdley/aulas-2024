@@ -1,0 +1,29 @@
+.sessao2 {
+    width: 100%;
+    color: #472663;
+    margin-top: 70px;
+    padding: 0 2%;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.sessao2 h2 {
+    font-size: 34px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.sessao2 p {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.sessao2 img {
+    width: 100%;
+    max-width: 1000px;
+    background-position: center;
+    background-size: contain;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

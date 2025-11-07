@@ -1,0 +1,85 @@
+section.contato {
+    padding: 60px 2%;
+}
+
+section.contato h2{
+    text-align: center;
+    color: #698293;
+    font-size: 18px;
+}
+
+section.contato form {
+    width: 100%;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.form-wraper {
+    margin-top: 10px;
+    padding: 0 2%;
+}
+
+.form-wraper span {
+    color: #b4b4b4;
+    font-size: 15px;
+}
+
+.form-wraper input[type=text] {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    margin-top: 8px;
+    border: 1px solid #dadada;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.wraper-w50 {
+    width: 100%;
+    display: flex;
+}
+
+.form-wraper textarea {
+    width: 100%;
+    padding: 8px;
+    height: 121px;
+    resize: none; /*para remover o resize do text area*/
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper input[type=text]:focus, .form-wraper textarea:focus {
+    outline: 0;
+}
+
+.wraper-button {
+    text-align: center;
+}
+
+.form-wraper input[type=submit] {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #dadada;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+    .wraper-w50 {
+        display: inline-block;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+}

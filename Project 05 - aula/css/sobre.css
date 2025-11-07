@@ -1,0 +1,72 @@
+section.sobre {
+    margin: 40px 2%;
+    min-height: 90%;
+}
+
+section.sobre > .container {
+    margin-top: 40px;
+    max-width: 840px;
+}
+
+.img-destaque-sobre {
+    width: 100%;
+    padding-top: 60%;
+    background-color: #ccc;
+    background-image: url('https://autovideos.com.br/wp-content/uploads/2016/02/akira-nakai.jpg');
+    background-size: cover;
+}
+
+.descricao-autor {
+    margin-top: 20px;
+}
+
+.descricao-autor h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.descricao-autor p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.descricao-autor2 {
+    margin-top: 40px;
+    display: flex;
+}
+
+.img-autor2 {
+    width: 30%;
+    padding-top: 30%;
+    background-color: red;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/4a768a2c-e8e7-43de-a572-8604c39b47be/SABUKARU_RWB_AKIRA_NAKAI_PORSCHE_58.jpg');
+    background-size: cover;
+}
+
+.descricao-autor3 {
+    width: 70%;
+    padding: 0 20px;
+}
+
+.descricao-autor3 p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .descricao-autor2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-autor2 {
+        width: 40%;
+        padding-top: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .descricao-autor3 {
+        width: 100%;
+    }
+}

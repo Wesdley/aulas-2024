@@ -1,0 +1,161 @@
+.venda {
+    padding: 90px 2%;
+}
+
+.content-venda {
+    margin: 90px 0;
+}
+
+.content-venda > .container {
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.search1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search1 h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 .barra-preco {
+    /* width: 100%; So de por max-width já fica responsivo, porém não sei como o professor vai agir no responsivo desta parte. */
+    width: 100%;
+    height: 20px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill {
+    width: 0%;
+    height: 20px;
+    position: absolute;
+    left: -2;
+    top: -2;
+    background-image: linear-gradient(to right, #898989, #ccc);
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    border-right: none;
+}
+
+.pointer-barra {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #898989, #595959);
+    position: absolute;
+    top: -7.5px;
+    left: 0;
+    border: 2px solid #494949;
+    cursor: pointer;
+}
+
+.valor-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.valor-pesquisa p {
+    font-size: 15px;
+}
+
+.search2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.search2 h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.form-wraper-venda {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.form-wraper-venda input[type=checkbox] {
+    display: none;
+}
+
+.form-wraper-venda label {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.form-wraper-venda input[type=checkbox]:checked + label > .circle {
+    display: block;
+}
+
+.vitrine-venda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    gap: 10px;
+}
+
+.vitrine-venda > .vitrine-destaque {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-venda > .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .search2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .vitrine-venda {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .vitrine-venda {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}

@@ -1,0 +1,78 @@
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2%;
+    height: calc(100px + 30px);
+}
+
+.mobile {
+    display: none;
+    height: 32px;
+    width: 32px;
+    background-image: url('../img/menu-icon.png');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mobile ul {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    border-bottom: 3px solid #EB2D2D;
+}
+
+.mobile li {
+    margin: 20px 0;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.mobile li:hover {
+    background-color: #ccc;
+}
+
+.mobile li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.desktop ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.desktop li {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.desktop li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        z-index: 999;
+    }
+
+    .mobile ul {
+        display: none;
+    }
+}
